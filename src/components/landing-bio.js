@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import AvatarImg from "../images/ab.jpg"
 
 const Container = styled.div`
   position: relative;
@@ -19,34 +20,29 @@ const OuterContainer = styled.div`
 
 const Description = styled.p`
   padding: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.2rem;
 `
 
 const NameHeader = styled.h1`
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 0;
 `
 
 const Avatar = styled.p`
   position: relative;
   img {
-      border-radius: 32px;
-      opacity: 70%;
-      width: 60px;
+    border-radius: 32px;
+    opacity: 85%;
+    width: 120px;
   }
 `
 
-const Follow = styled.p`
-  text-transform: uppercase;
-  a {
-    background-color: #444;
-    color: #fff;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 8px 12px;
-    text-decoration: none;
-  }
+const Next = styled.a`
+  color: hsla(100, 100%, 100%, 0.2);
+  font-size: 64px;
+  font-weight: bold;
+  text-decoration: none;
 `
 
 const LandingBio = () => (
@@ -61,17 +57,15 @@ const LandingBio = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <OuterContainer>
         <Container>
           <Avatar>
-            <img alt="ab" src="ab.jpg" />
+            <img src={AvatarImg} alt="ab" />
           </Avatar>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
-          <Follow>
-            <a href="https://twitter.com/abarmat">Follow Me</a>
-          </Follow>
+          <Next href="/about">&#x292B;</Next>
         </Container>
       </OuterContainer>
     )}

@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
-  padding: 1.45rem 1.0875rem;
+  padding: 2.45rem 1.0875rem;
 `
 
 const ArticleDate = styled.h5`
@@ -20,6 +20,10 @@ const ArticleDate = styled.h5`
 const MarkerHeader = styled.h3`
   display: inline;
   border-radius: 1em 0 1em 0;
+  span {
+    color: #777;
+    font-size: 22px;
+  }
 `
 
 const ReadingTime = styled.h5`
@@ -32,7 +36,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Posts" />
       <Content>
-        <h1>Posts</h1>
         {data.allMarkdownRemark.edges
           .filter(({ node }) => {
             const rawDate = node.frontmatter.rawDate
@@ -48,7 +51,9 @@ const IndexPage = ({ data }) => {
                   color: inherit;
                 `}
               >
-                <MarkerHeader>{node.frontmatter.title}</MarkerHeader>
+                <MarkerHeader>
+                  <span>#</span> {node.frontmatter.title}
+                </MarkerHeader>
               </Link>
               <div>
                 <ArticleDate>{node.frontmatter.date}</ArticleDate>
