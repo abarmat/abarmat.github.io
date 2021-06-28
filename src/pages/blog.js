@@ -20,6 +20,10 @@ const ArticleDate = styled.h5`
 const MarkerHeader = styled.h3`
   display: inline;
   border-radius: 1em 0 1em 0;
+  span {
+    color: #444;
+    font-size: 22px;
+  }
 `
 
 const ReadingTime = styled.h5`
@@ -48,7 +52,7 @@ const IndexPage = ({ data }) => {
                   color: inherit;
                 `}
               >
-                <MarkerHeader>{node.frontmatter.title}</MarkerHeader>
+                <MarkerHeader><span>#</span> {node.frontmatter.title}</MarkerHeader>
               </Link>
               <div>
                 <ArticleDate>{node.frontmatter.date}</ArticleDate>

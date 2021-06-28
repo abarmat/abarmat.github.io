@@ -61,7 +61,7 @@ const GitHubLink = styled.a`
   }
 `
 
-const Box = styled.div`
+const Box = styled(Link)`
   position: relative;
   top: 5px;
   margin-right: 20px;
@@ -86,10 +86,9 @@ const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
       <p>
-        <Box></Box>
-        <HomeLink to="/">MΞ</HomeLink>
-        <NavLink to="/blog">Text</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
+        <Box to="/"></Box>
+        <HomeLink to="/about">MΞ</HomeLink>
+        <NavLink to="/blog">Out&gt;</NavLink>
         <GitHubLink href="https://github.com/abarmat">Code</GitHubLink>
       </p>
     </Content>

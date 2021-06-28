@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import AvatarImg from '../images/ab.jpg'
 
 const Container = styled.div`
   position: relative;
@@ -24,7 +25,7 @@ const Description = styled.p`
 `
 
 const NameHeader = styled.h1`
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 0;
 `
 
@@ -65,7 +66,7 @@ const LandingBio = () => (
       <OuterContainer>
         <Container>
           <Avatar>
-            <img alt="ab" src="ab.jpg" />
+            <img src={AvatarImg} alt="ab" />
           </Avatar>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>

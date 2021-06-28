@@ -17,6 +17,8 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const isAbsoluteUrl = (urlString) => (urlString.indexOf('http://') === 0 || urlString.indexOf('https://') === 0)
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
@@ -54,7 +56,7 @@ exports.createPages = ({ graphql, actions }) => {
       return Promise.reject(result.errors)
     }
     result.data.allMarkdownRemark.edges
-      .filter(({ node }) => !node.frontmatter.draft)
+      .filter(({ node }) => !node.frontmatter.draft && !isAbsoluteUrl(node.frontmatter.path))
       .forEach(({ node }) => {
         createPage({
           path: node.frontmatter.path,

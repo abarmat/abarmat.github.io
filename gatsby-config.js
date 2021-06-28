@@ -1,8 +1,9 @@
 module.exports = {
+  pathPrefix: "abarmat.github.io",
   siteMetadata: {
     title: `Ariel Barmat`,
-    subtitle: `I do human coordination using smart contracts`,
-    description: `Personal site.`,
+    subtitle: `Crypto + Data + Economics`,
+    description: `Ariel Barmat - Personal site`,
     author: `@abarmat`,
   },
   plugins: [
