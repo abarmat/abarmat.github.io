@@ -61,6 +61,16 @@ const GitHubLink = styled.a`
   }
 `
 
+const Box = styled.div`
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+  background-color: #000;
+  float: left;
+  height: 14px;
+  width: 14px;
+`
+
 const HomeLink = styled(NavLink)`
   margin-left: 0;
 `
@@ -76,11 +86,11 @@ const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
       <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">
-          GitHub
-        </GitHubLink>
+        <Box></Box>
+        <HomeLink to="/">MΞ</HomeLink>
+        <NavLink to="/blog">Text</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <GitHubLink href="https://github.com/abarmat">Code</GitHubLink>
       </p>
     </Content>
   </SiteHeader>
