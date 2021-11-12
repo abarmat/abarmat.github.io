@@ -10,7 +10,7 @@ const Content = styled.div`
 `
 
 const NavLink = styled(Link)`
-  color: black;
+  color: hsla(100, 100%, 100%, 0.8);
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -24,7 +24,7 @@ const NavLink = styled(Link)`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: hsla(100, 100%, 100%, 0.8);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -36,7 +36,7 @@ const NavLink = styled(Link)`
 `
 
 const GitHubLink = styled.a`
-  color: black;
+  color: hsla(100, 100%, 100%, 0.8);
   margin-left: 15px;
   text-decoration: none;
   display: inline-block;
@@ -50,7 +50,7 @@ const GitHubLink = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: hsla(100, 100%, 100%, 0.8);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -65,7 +65,7 @@ const Box = styled(Link)`
   position: relative;
   top: 5px;
   margin-right: 20px;
-  background-color: #000;
+  background-color: hsla(100, 100%, 100%, 0.8);
   float: left;
   height: 14px;
   width: 14px;
@@ -88,8 +88,9 @@ const Header = ({ siteTitle }) => (
       <p>
         <Box to="/"></Box>
         <HomeLink to="/about">MΞ</HomeLink>
-        <NavLink to="/blog">Out&gt;</NavLink>
+        <NavLink to="/blog">Text</NavLink>
         <GitHubLink href="https://github.com/abarmat">Code</GitHubLink>
+        <NavLink href="https://twitter.com/abarmat">&amp;&gt;</NavLink>
       </p>
     </Content>
   </SiteHeader>
