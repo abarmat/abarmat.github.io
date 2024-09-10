@@ -41,6 +41,7 @@ module.exports = function (eleventyConfig) {
   // Pass through copy for CSS and assets
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   // Blog post collection
   eleventyConfig.addCollection("posts", function (collectionApi) {
