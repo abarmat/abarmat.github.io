@@ -10,7 +10,7 @@
     "build": "eleventy",
     "format": "prettier --write src/**/*.{js,jsx}",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "eleventy && gh-pages -d _site -b main"
+    "deploy": "eleventy && gh-pages -d dist -b main"
   },
   "keywords": [],
   "license": "MIT",
