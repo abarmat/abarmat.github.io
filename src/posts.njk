@@ -1,0 +1,22 @@
+---
+layout: base-with-nav.njk
+title: Posts | abarmat.com
+nav: posts
+---
+
+<div class="content">
+    <section>
+        <ul class="post-list">
+            {%- for post in collections.post | reverse -%}
+            <li class="post">
+                <h3>
+                    <span class="post-marker">#</span>
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    <small class="post-date">- {{ post.date | dateFilter }}</small>
+                </h3>
+                <!-- <p>{{ post.content | snippet(200) }}</p> -->
+            </li>
+            {%- endfor -%}
+        </ul>
+    </section>
+</div>

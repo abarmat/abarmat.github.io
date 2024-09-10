@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: Home | abarmat.com
+---
+
+<div class="content home">
+    <section>
+        <div class="bio-id">
+            <img class="avatar" src="/assets/images/avatar.png" alt="AB" />
+            <h1>Ariel Barmat</h1>
+            <div class="contact">
+                <sup>find me: <a href="https://twitter.com/abarmat">twitter</a>, <a href="https://github.com/abarmat">github</a>, <a href="mailto:hey@abarmat.com">email</a></sup>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <p>
+            Core contributor at <a href="https://thegraph.com/" rel="noreferrer">The Graph</a> and <a href="https://decentraland.org" rel="noreferrer">Decentraland</a> / builder / tech investor.
+        </p>
+    </section>
+    <section>
+        <h3><span>#</span> My Work</h3>
+        <p>
+            In 2020 I joined <a href="https://thegraph.com/" rel="noreferrer">The Graph</a> as a protocol engineer. We built and launched the Graph Network with a small team and then I ended up managing the whole engineering team.
+        </p>
+        <p>
+            I joined <a href="https://decentraland.org" rel="noreferrer">Decentraland</a> in 2017 as a founding engineer to build the first-ever user-owned Metaverse. I led the dApps & Smart Contracts team where we pioneered NFTs by launching <a href="https://decentraland.org/blog/platform/designing-genesis-city-roads-urban-planning/" rel="noreferrer">LAND</a>, the most popular one in Ethereum at the time and a <a href="/posts/post-2018-03-19" rel="noreferrer">Marketplace</a> to trade it.
+        </p>
+        <p>
+            In 2016 <a href="/posts/post-2018-09-07" rel="noreferrer">I jumped fully into crypto</a> as CTO of PopChest, starting a journey that took me to San Mateo, California, and participating in <a href="https://medium.com/boost-vc/say-hello-to-tribe-8-a28bab4fe0bd" rel="noreferrer">Tribe 8</a> of <a href="https://www.boost.vc" rel="noreferrer">Boost VC</a> incubator.
+        </p>
+        <p>
+            In 2010 I founded Oony, an online and mobile platform that helped people shop smarter. At its peak, we had +3 million publications in 15 countries, and it was very profitable... until it wasn't, then <a href="/posts/post-2016-04-18" rel="noreferrer">I had to start from scratch</a>, and it was good. Before that, I founded Weegoh, the first location-based social network for mobile devices in Latin America that we pivoted to Oony.
+        </p>
+    </section>
+    <section class="post-section">
+        <h3>
+            <span>#</span> Posts
+        </h3>
+        <ul class="post-list">
+            {%- for post in collections.posts | limit(5) -%}
+            <li class="post">
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+                <small class="post-date">- {{ post.date | dateFilter }}</small>
+            </li>
+            {%- endfor -%}
+            <a href="/posts">See all &gt;</a>
+        </ul>
+    </section>
+</div>

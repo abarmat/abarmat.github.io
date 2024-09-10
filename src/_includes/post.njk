@@ -1,0 +1,12 @@
+---
+layout: base-with-nav.njk
+title: Post | abarmat.com
+nav: posts
+---
+
+<div class="content post">
+  <section>
+    {{ content | safe }}
+  </section>
+  <sub>Published on <a href="{{path}}">{{date | dateFilter}}</a></sub>
+</div>

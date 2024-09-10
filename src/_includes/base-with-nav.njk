@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+
+<header>
+    <nav>
+        <a class="avatar" href="/">
+            <img src="/assets/images/avatar.png" alt="AB" />
+        </a>
+        <div class="anchor">
+            / <a href="/">abarmat.com</a> / <a href="/{{ nav }}">{{ nav }}</a>
+        </div>
+    </nav>
+</header>
+<div>
+    {{ content | safe }}
+</div>

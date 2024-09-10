@@ -1,0 +1,26 @@
+{
+  "name": "abarmat-site",
+  "version": "1.0.0",
+  "author": "Ariel Barmat",
+  "description": "Ariel Barmat : Personal Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "develop": "yarn start",
+    "build": "eleventy",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "eleventy && gh-pages -d _site -b main"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abarmat/home"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "gh-pages": "^6.1.1",
+    "html-minifier": "^4.0.0"
+  }
+}
