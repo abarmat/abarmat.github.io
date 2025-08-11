@@ -1,6 +1,10 @@
 const htmlmin = require("html-minifier");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
+  // Add RSS plugin
+  eleventyConfig.addPlugin(pluginRss);
+
   // Date filter
   eleventyConfig.addFilter("dateFilter", function (date) {
     return new Date(date).toLocaleDateString("en-US", {
@@ -54,5 +58,16 @@ module.exports = function (eleventyConfig) {
       output: "dist",
       includes: "_includes",
     },
+    // Add metadata for RSS feed
+    dataTemplateEngine: "njk",
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    templateFormats: ["html", "njk", "md"],
+    // Site metadata
+    metadata: {
+      url: "https://abarmat.com", // Update this to your actual domain
+      title: "Ariel Barmat - Personal Site",
+      description: "Personal blog and thoughts on technology, AI, and more"
+    }
   };
 };

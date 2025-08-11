@@ -840,3 +840,17 @@ nav a:hover {
     list-style-type: circle;
   }
 }
+
+/* RSS Feed Link Styling */
+.rss-link {
+  margin-left: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.rss-link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
