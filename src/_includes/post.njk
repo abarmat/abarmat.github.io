@@ -6,6 +6,7 @@ nav: posts
 
 <div class="content post">
   <section>
+    <h1>{{ title }}</h1>
     {{ content | safe }}
   </section>
   <sub>Published on <a href="{{path}}">{{date | dateFilter}}</a></sub>
