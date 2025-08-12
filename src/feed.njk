@@ -18,6 +18,7 @@ eleventyExcludeFromCollections: true
     <item>
       <title>{{ post.data.title }}</title>
       <description>{{ post.data.title }}</description>
+      <content:encoded><![CDATA[{{ post.templateContent | safe }}]]></content:encoded>
       <link>{{ post.data.path }}</link>
       <guid>{{ post.data.path }}</guid>
       <pubDate>{{ post.date.toISOString() }}</pubDate>
