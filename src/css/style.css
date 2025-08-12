@@ -229,7 +229,7 @@ html {
 }
 
 body {
-  color: hsla(100, 100%, 100%, 0.80);
+  color: hsla(100, 100%, 100%, 0.8);
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -567,13 +567,13 @@ ul li {
   padding-left: 0;
 }
 
-li>ol {
+li > ol {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
 
-li>ul {
+li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
@@ -591,7 +591,7 @@ p *:last-child {
   margin-bottom: 0;
 }
 
-li>p {
+li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 
@@ -715,44 +715,13 @@ hr {
   text-align: center;
   margin: 0 0 2.6rem 0;
   background: 0;
+  font-size: 14px;
 }
 hr::before {
   content: "•••";
   font-size: 1em;
   letter-spacing: 0.8em;
-  color: hsla(100, 100%, 100%, 0.30);
-}
-
-nav {
-  margin: 0 auto;
-  max-width: 680px;
-  height: 85px;
-  padding: 1rem 1.5rem 0 1.5rem;
-  border-bottom: 4px solid hsla(100, 100%, 100%, 0.025);
-
-  a {
-    text-decoration: none;
-  }
-
-  .avatar {
-    float: left;
-
-    img {
-      width: 45px;
-      height: 45px;
-      object-fit: cover;
-      margin-right: 20px;
-      border-radius: 50%;
-    }
-  }
-
-  .anchor {
-    line-height: 48px;
-    font-weight: bold;
-  }
-}
-nav a:hover {
-  text-decoration: underline; /* Underline on hover */
+  color: hsla(100, 100%, 100%, 0.3);
 }
 
 .content {
@@ -768,9 +737,15 @@ nav a:hover {
 
 .bio-id {
   margin-top: 12px;
+  text-align: center;
 
   h1 {
+    font-size: 26px;
     padding-top: 6px;
+    text-transform: uppercase;
+  }
+  h1 a {
+    text-decoration: none;
   }
 
   p {
@@ -781,9 +756,8 @@ nav a:hover {
   }
 
   .avatar {
-    width: 80px;
-    height: 80px;
-    float: left;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     margin-right: 20px;
     border-radius: 50%;
@@ -803,17 +777,30 @@ nav a:hover {
   clear: both;
 }
 
+.nav .bio-id {
+  h1 {
+    font-size: 16px;
+    padding-top: 6px;
+    text-transform: uppercase;
+  }
+  h1 a {
+    text-decoration: none;
+  }
+  h1 span {
+    font-weight: normal;
+  }
+  h1 span a:hover {
+    text-decoration: underline;
+  }
+}
+
 .post-list {
   padding: 0;
   margin: 0;
 
-  a {
-    text-decoration: none;
-  }
-
   .post {
     list-style-type: none;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
 
     h3 {
       font-size: 18px;
