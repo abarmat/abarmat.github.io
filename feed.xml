@@ -1,5 +1,6 @@
+
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ariel Barmat</title>
     <description>Personal blog and thoughts on technology, AI, and more</description>
@@ -25,8 +26,8 @@
 <hr>
 <p>Music is definitely one the most positive hacks to our minds that we have invented.</p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2018-12-16/</link>
-      <guid>/posts/post-2018-12-16/</guid>
+      <link>https://medium.com/@abarmat/two-years-into-the-crypto-rabbit-hole-dff04e874ee9</link>
+      <guid>https://medium.com/@abarmat/two-years-into-the-crypto-rabbit-hole-dff04e874ee9</guid>
       <pubDate>2018-12-16T00:00:00.000Z</pubDate>
     </item>
     
@@ -60,8 +61,8 @@
 <hr>
 <p>In summary, many things happened to me in just 2 years time. I truly needed to write this post to reflect back on how I changed and how fast the ecosystem progressed in the last years. Exciting times ahead!</p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2018-09-07/</link>
-      <guid>/posts/post-2018-09-07/</guid>
+      <link>https://medium.com/@abarmat/two-years-into-the-crypto-rabbit-hole-dff04e874ee9</link>
+      <guid>https://medium.com/@abarmat/two-years-into-the-crypto-rabbit-hole-dff04e874ee9</guid>
       <pubDate>2018-09-07T00:00:00.000Z</pubDate>
     </item>
     
@@ -126,8 +127,8 @@
 <p><em>We hope you like the first version of our Marketplace like we do. We have many features in mind coming after this version, stay tuned!</em></p>
 <p><em>See you all in the Metaverse.</em></p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2018-03-19/</link>
-      <guid>/posts/post-2018-03-19/</guid>
+      <link>https://medium.com/decentraland/introducing-the-decentraland-marketplace-d8b4c7d509f8</link>
+      <guid>https://medium.com/decentraland/introducing-the-decentraland-marketplace-d8b4c7d509f8</guid>
       <pubDate>2018-03-19T00:00:00.000Z</pubDate>
     </item>
     
@@ -166,8 +167,8 @@
 <p><em>Code is available on GitHub -&gt;</em> <a href="https://github.com/abarmat/rendernet"><em>https://github.com/abarmat/rendernet</em></a></p>
 <p><em>If you try it send me any feedback!</em></p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2017-11-07/</link>
-      <guid>/posts/post-2017-11-07/</guid>
+      <link>https://medium.com/@abarmat/an-experiment-about-portable-intelligence-e52cd89e9f1b</link>
+      <guid>https://medium.com/@abarmat/an-experiment-about-portable-intelligence-e52cd89e9f1b</guid>
       <pubDate>2017-11-07T00:00:00.000Z</pubDate>
     </item>
     
@@ -204,8 +205,8 @@
 <hr>
 <p><em>If you liked the article, write me with your hacks for making &quot;hard&quot; choices.</em></p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2017-10-07/</link>
-      <guid>/posts/post-2017-10-07/</guid>
+      <link>https://medium.com/@abarmat/a-dive-into-decision-making-98cb198e0b45</link>
+      <guid>https://medium.com/@abarmat/a-dive-into-decision-making-98cb198e0b45</guid>
       <pubDate>2017-10-10T00:00:00.000Z</pubDate>
     </item>
     
@@ -238,8 +239,8 @@
 <p>You can play with the contract running on the Ropsten testnet at <a href="https://smart.popchest.com">https://smart.popchest.com</a></p>
 <p>Send feedback and questions!</p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2017-09-17/</link>
-      <guid>/posts/post-2017-09-17/</guid>
+      <link>https://medium.com/@abarmat/web-money-322eeec2f588</link>
+      <guid>https://medium.com/@abarmat/web-money-322eeec2f588</guid>
       <pubDate>2017-09-17T00:00:00.000Z</pubDate>
     </item>
     
@@ -256,8 +257,8 @@
 <hr>
 <p><em>If you ever had or you are going through an adaptation process to tinnitus lets be in touch.</em></p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2017-04-10/</link>
-      <guid>/posts/post-2017-04-10/</guid>
+      <link>https://medium.com/@abarmat/the-sound-of-silence-ff4d91664d42</link>
+      <guid>https://medium.com/@abarmat/the-sound-of-silence-ff4d91664d42</guid>
       <pubDate>2017-04-10T00:00:00.000Z</pubDate>
     </item>
     
@@ -312,8 +313,8 @@
 </li>
 </ul>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2017-01-16/</link>
-      <guid>/posts/post-2017-01-16/</guid>
+      <link>https://medium.com/@abarmat/word-similarity-using-product-discount-data-2ec0b2ac993c</link>
+      <guid>https://medium.com/@abarmat/word-similarity-using-product-discount-data-2ec0b2ac993c</guid>
       <pubDate>2017-01-16T00:00:00.000Z</pubDate>
     </item>
     
@@ -342,8 +343,8 @@
 <p>I would like to see more advances in payments and the simplification of legal stuff. Many startups like Stripe (<a href="https://stripe.com/atlas">https://stripe.com/atlas</a>), Coinbase, LegalZoom, are challenging the bureaucracy imposed by a lagging tax system, legal and financial regulations but I feel they end up fighting against a system that is not willing to change so easily.</p>
 <p><em>Best of luck.</em></p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2016-04-18/</link>
-      <guid>/posts/post-2016-04-18/</guid>
+      <link>https://medium.com/@abarmat/starting-from-scratch-2007-vs-2016-ea7329ff3e6c</link>
+      <guid>https://medium.com/@abarmat/starting-from-scratch-2007-vs-2016-ea7329ff3e6c</guid>
       <pubDate>2016-04-18T00:00:00.000Z</pubDate>
     </item>
     
@@ -373,8 +374,8 @@
 <hr>
 <p>I believe that this technology has the potential to increase the productivity of our civilization multiple times thus giving us more free time. We all will benefit from opening more data to the world so multiple teams and startups that might be working on new ideas may use it to <strong>make a smarter AI and find the answers much needed by our society</strong>.</p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2015-12-28/</link>
-      <guid>/posts/post-2015-12-28/</guid>
+      <link>https://medium.com/@abarmat/let-s-open-data-and-feed-a-smarter-ai-de0e0d1663a4</link>
+      <guid>https://medium.com/@abarmat/let-s-open-data-and-feed-a-smarter-ai-de0e0d1663a4</guid>
       <pubDate>2015-12-28T00:00:00.000Z</pubDate>
     </item>
     
@@ -408,8 +409,8 @@
 <hr>
 <p>Whenever we face a new task or challenge we feel odd, embrace that feeling, the excitement of doing something new and incorporate it as part of the set of tools that help you dealing with your life.</p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2015-10-29/</link>
-      <guid>/posts/post-2015-10-29/</guid>
+      <link>https://medium.com/@abarmat/into-the-curves-of-happiness-94fcaabd098</link>
+      <guid>https://medium.com/@abarmat/into-the-curves-of-happiness-94fcaabd098</guid>
       <pubDate>2015-10-29T00:00:00.000Z</pubDate>
     </item>
     
@@ -445,8 +446,8 @@
 <hr>
 <p>Artificial Intelligence may or not be the ultimate creation of computer science, but it will surely have a great impact on our relation with our work and social identity, and even maybe it will help us getting a better understanding of our own minds.</p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2015-08-02/</link>
-      <guid>/posts/post-2015-08-02/</guid>
+      <link>https://medium.com/@abarmat/execute-or-think-bdf581fed251</link>
+      <guid>https://medium.com/@abarmat/execute-or-think-bdf581fed251</guid>
       <pubDate>2015-08-02T00:00:00.000Z</pubDate>
     </item>
     
@@ -478,8 +479,8 @@
 <p>Some questions I have regarding the future coexistence between humans and AI. Is it possible for an AI to develop cognitive biases as well as we human do? Will there be one general super-intelligent AI or we will have multiple AI with different &quot;personalities&quot; existing on the Internet? Will we educate AIs and then they’ll educate new generations of humans? How we will handle privacy issues, when simultaneously, sharing is key for AIs to help us making better decisions?</p>
 <p>I’ll write more thoughts about this on the following posts ☺</p>
 ]]></content:encoded>
-      <link>https://abarmat.com/posts/post-2015-06-10/</link>
-      <guid>/posts/post-2015-06-10/</guid>
+      <link>https://medium.com/technology-invention-and-more/to-trust-or-not-to-trust-the-ai-7fedcdae5b6c</link>
+      <guid>https://medium.com/technology-invention-and-more/to-trust-or-not-to-trust-the-ai-7fedcdae5b6c</guid>
       <pubDate>2015-06-10T00:00:00.000Z</pubDate>
     </item>
     
