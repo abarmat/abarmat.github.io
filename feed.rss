@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ariel Barmat</title>
+    <description>Personal blog and thoughts on technology, AI, and more</description>
+    <link>https://abarmat.com/</link>
+    <atom:link href="https://abarmat.com/feed.rss" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    
+    <lastBuildDate>2018-12-16T00:00:00.000Z</lastBuildDate>
+    
+    
+    <item>
+      <title>Tuned to the mood of the music</title>
+      <description>Tuned to the mood of the music</description>
+      <content:encoded><![CDATA[<p><img src="https://cdn-images-1.medium.com/max/2560/1*NXeOGUpQX5tcOusKYG6bMw.jpeg" alt=""></p>
+<blockquote>
+<p>One good thing about music, when it hits you, you feel no pain . — Bob Marley</p>
+</blockquote>
+<p>I've heard many times how music transports you to different places, reminds you of someone or brings you to other times of your life.</p>
+<p>During the last few years, I've been listening to all types of music and it has always surprised me the effect it can have on your brain, particularly your mood. Ever happened to be hooked with your headsets on, at a coffee bar, listening to your playlist and suddenly have this urge to start singing the current song? — Well, it happened to me many times :)</p>
+<p>Talking to friends I found that some people are very <strong><em>sensitive to style</em></strong>, for example, listening to electronic music for working or classical music for studying which helps with concentration. Whichever style of music lift you up or take you down is very subjective, but, in the end, there is no doubt about its effect. Other people have a stronger <strong><em>situational reaction</em></strong>, it takes them to different place or time, reminds them of something and makes them feel like they felt when listening to those tracks in the past.</p>
+<p>I've come to realize that the influence of music works two way. Let say you might have been going through a bad moment in your life and while you were in the struggle you listened to a playlist that made you feel a bit better. Maybe some years later, you are in a completely different (better?) mood but listening to those songs again brings you a little bit to this past moment which disrupts your current feelings.</p>
+<p>I call this effect anchoring, effectively using music as a bookmark to take you to moments in your life when you were happy (or sad). This activates all type of reactions of different degrees, bringing you memories and situational feelings — a powerful tool to free yourself from a current state of mind that you want to change.</p>
+<hr>
+<p>Music is definitely one the most positive hacks to our minds that we have invented.</p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2018-12-16/</link>
+      <guid>/posts/post-2018-12-16/</guid>
+      <pubDate>2018-12-16T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>Two years into the crypto rabbit hole</title>
+      <description>Two years into the crypto rabbit hole</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>Whatever you do, or dream you can, begin it. Boldness has genius and power and magic in it. — Johann Wolfgang von Goethe</p>
+</blockquote>
+<p>About two years ago, in August 2016, I started my journey into working full-time in blockchain-related projects. After shutting down a previous startup I spent building for 6 years (yes, almost a complete life in startup years), I felt it was time to venture into new territories. For the first time in many years, I could <a href="https://medium.com/@abarmat/starting-from-scratch-2007-vs-2016-ea7329ff3e6c">start from scratch</a> once again.</p>
+<p>At that time I was excited about a couple of technologies I'd been tinkering with but wasn't really sure on how to get deeply involved into any of them. One of the technologies was Machine Learning with which I'm <a href="https://medium.com/technology-invention-and-more/to-trust-or-not-to-trust-the-ai-7fedcdae5b6c">fascinated</a>, I did most of the <a href="https://www.coursera.org/learn/machine-learning">Coursera Courses</a>, enrolled in a Master's in Data Science at the University and started experimenting with <a href="https://rendernet.abarmat.com/">little projects</a>. The other one was crypto more specifically the Bitcoin Blockchain. I started playing with it because I liked how it empowered individuals to store and transfer value without intermediaries, I liked the freedom it gave me and others, the way it challenged the status quo.</p>
+<h2>Start of the journey</h2>
+<p>From August to November 2016 I had the opportunity to participate in the Tribe 8 of the <a href="https://www.boost.vc/">Boost.vc</a> program in Silicon Valley with a startup called PopChest. Boost is maybe one of the most active investors in Blockchain and VR ventures.</p>
+<p>After 3 months of hard work, we reached to the Demo Day alive (also after drinking many bottles of Soylent), raised funds from investors and best of all, made lots of friends from all around the world. We were all creating companies revolving around crypto and VR. It was the best place to get deeply involved in the ecosystem as we were a bunch of people working every day pushing the limits of technology, helping each other, going out together and sleeping on bunk beds across the street.</p>
+<p><sub><img src="https://cdn-images-1.medium.com/max/800/1*sE3LmNgDoYz3nSEJHG89gw.jpeg" alt="Boost VC Tribe 8">Boost VC Tribe 8</sub></p>
+<h2>The journey continues</h2>
+<p>After about a bit more than a year working on PopChest, I joined <a href="https://decentraland.org">Decentraland</a> as <a href="https://www.linkedin.com/in/abarmat">Head of dApps &amp; Smart Contracts</a>. We grew a company of two people to about 40 today to fulfill the vision of creating a decentralized virtual world that runs on open standards and owned by its users.</p>
+<p><sub><img src="https://cdn-images-1.medium.com/max/800/1*7GIGFfWCOzoZaHfwLs-ZFg.jpeg" alt="Decentraland Meetup in New York City"> Decentraland Meetup in New York City</sub></p>
+<p>During the last months, with my team, we launched some great new products: an <strong>Auction</strong> app to sell parcels of LAND and spawn the Genesis City — the first city in Decentraland, a <a href="https://market.decentraland.org"><strong>Marketplace</strong></a> to buy and sell parcels — it has already traded more than 3200 LAND for a total of 45 million MANA (that's a lot!) and an app called <a href="https://agora.decentraland.org"><strong>Agora</strong></a> to vote on community issues using cryptographic proofs. We have also been invited to give presentations in different places: <a href="https://ethmemphis.com/">ETHMemphis</a>, <a href="https://dclmeetup.splashthat.com/">several meetups in New York</a>, and a <a href="https://www.nifty.gg/">number of events all across Asia</a>.</p>
+<h2>Pushing the ecosystem forward</h2>
+<p>As we learned more and more about what a powerful technology as a blockchain could be used for, we also learned about it many limitations. Sadly I see every day overhyped claims about how it will solve problems that a bit of technical savviness will prove wrong. I guess this is part of the normal (and a bit messy) cycle of having a new toy to play, trying to apply it to everything, breaking stuff, find out what it is best for.</p>
+<p>In the process of making Decentraland a reality, we created several tools to help other developers build dApps easily and to address many of the shortcomings we faced when we launched our first set of products:</p>
+<ul>
+<li><strong>dappeteer:</strong> E2E testing for dApps using Puppeteer + MetaMask <a href="https://github.com/decentraland/dappeteer">https://github.com/decentraland/dappeteer</a></li>
+<li><strong>decentraland-dapps:</strong> Common modules for dApps <a href="https://github.com/decentraland/decentraland-dapps">https://github.com/decentraland/decentraland-dapps</a></li>
+<li><strong>eth-connect:</strong> TypeScript-based web3 library, based on web3.js <a href="https://github.com/decentraland/eth-connect">https://github.com/decentraland/eth-connect</a></li>
+<li><strong>decentraland-eth:</strong> Ethereum common helpers for Decentraland <a href="https://github.com/decentraland/decentraland-eth">https://github.com/decentraland/decentraland-eth</a></li>
+</ul>
+<p>Also, most of the code we write every day is open source <a href="https://github.com/decentraland">https://github.com/decentraland</a></p>
+<p>I'll talk more about our experience building applications backed by a blockchain in future posts.</p>
+<hr>
+<p>In summary, many things happened to me in just 2 years time. I truly needed to write this post to reflect back on how I changed and how fast the ecosystem progressed in the last years. Exciting times ahead!</p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2018-09-07/</link>
+      <guid>/posts/post-2018-09-07/</guid>
+      <pubDate>2018-09-07T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>Introducing the Decentraland Marketplace</title>
+      <description>Introducing the Decentraland Marketplace</description>
+      <content:encoded><![CDATA[<h2>Buy and sell your LAND in the Metaverse!</h2>
+<p><img src="https://cdn-images-1.medium.com/max/2560/1*Td-rtv3NwTrCiLMA4s0klw.png" alt=""></p>
+<p>Today we are very excited to announce our <a href="https://market.decentraland.org">Marketplace</a>. After the <a href="https://blog.decentraland.org/designing-genesis-city-roads-urban-planning-ba068f08e74d">Terraform Event</a> it became evident that we needed to provide an easy way to control your assets within Decentraland. After a few weeks’ work, we are are delighted to deliver this tool to our users.</p>
+<p>This is the first release in what will be a series of tools designed to help you manage your assets within the Metaverse, trade with other people, and ultimately become the king of your own content.</p>
+<p>I’d like to give you a brief overview of the different functionality offered in the Marketplace, and how you can use it to start trading and managing LAND.</p>
+<h2>Now, what can I do with the Marketplace?</h2>
+<p>The Marketplace provides the following features:</p>
+<ul>
+<li><strong>Publish</strong> a parcel of LAND for sale, setting your own price in MANA and an expiration date for the offer.</li>
+<li><strong>Buy</strong> a parcel that is for sale.</li>
+<li><strong>Name</strong> your parcel and give it a description.</li>
+<li><strong>Transfer</strong> your LAND to a different user.</li>
+<li><strong>Control</strong> the parcels you own and visualize the contributions you’ve made to districts.</li>
+<li><strong>Explore</strong> the world through a map to see who owns what.</li>
+</ul>
+<h1>How do you secure my assets?</h1>
+<p>The Marketplace app is backed by a smart contract that provides a trustless and transparent exchange for buying and selling LAND. The Marketplace is completely open source, and you can view the contract code in our <a href="https://github.com/decentraland/marketplace-contracts">GitHub Repo</a>.</p>
+<p>We’ve also designed the Marketplace to facilitate atomic swaps. In cryptocurrency exchanges, an atomic swap is a transaction that requires each party to fulfill their obligation (either delivering MANA or a LAND token) before a specified amount of time elapses. The transaction is made final if, and only if, each party holds up their end of the deal before the time is up — all of this is executed by an Ethereum smart contract. These atomic swaps completely remove any counterparty risk.</p>
+<h1>How can I use it?</h1>
+<p>To get started with the Marketplace, simply visit <a href="https://market.decentraland.org">market.decentraland.org</a>, read through our Terms &amp; Conditions, and start browsing LAND in the Atlas!</p>
+<p>When you are ready to begin trading, or if you want to view your LAND holdings, you’ll have to log in and unlock your wallet. The Marketplace supports <a href="https://metamask.io/">MetaMask</a>, <a href="https://github.com/ethereum/mist">Mist</a>, or <a href="https://www.ledgerwallet.com/">Ledger</a> hardware wallets. Please make sure that you’re using the same wallet address you used during the LAND auction if you already have purchased LAND, otherwise those parcels won’t show up in your account.</p>
+<h2>The Atlas View</h2>
+<p>Since location and proximity to roads, districts, and plazas <a href="https://blog.decentraland.org/designing-genesis-city-roads-urban-planning-ba068f08e74d">play such a large role in determining the value of LAND</a>, we wanted to make sure that you can get a broad, visual overview of Genesis City — so we’ve added the <strong>Atlas View</strong>.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*aTZd3CS0nO7suL448ziePw.png" alt=""></p>
+<p>The Atlas view gives you a bird’s-eye perspective of every color coded parcel, road, district, and plaza in Decentraland.</p>
+<p>You can click and drag the map to move around, zoom in and out, or hover your cursor over a parcel to see its x,y location and owner. You can always click “Color Key” in the footer for a rundown of what each color means.</p>
+<p>Any parcel that is currently for sale in the Marketplace will be highlighted.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*9bIv26FLZD3j-q0f." alt=""></p>
+<h2>The Marketplace View</h2>
+<p>If you’d rather see a list of every parcel currently offered on the market, you can use the <strong>Marketplace View</strong>. You can sort offers by “Newest”, “Cheapest”, “Most expensive”, and “Closest to expire”. To learn more about a particular parcel that’s for sale, simply click the tile in the Marketplace.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*pPTAF1hBEez0F5nIJhAwog.png" alt=""></p>
+<h2>Managing your LAND</h2>
+<p>We created this section so that you can manage all of the LAND parcels you own. To view this page, click <strong>My Land</strong>. Here you’ll find a list of all of your parcels, including any that you’ve contributed to community districts and any parcels that you have listed for sale.</p>
+<p>By clicking on one of the parcels listed under <strong>My Land</strong>, you can edit its name, description, put it up for sale, or transfer it directly to another wallet address.</p>
+<h2>Conducting Transactions</h2>
+<p>Before buying or selling LAND you first have to authorize the Marketplace to perform secure exchanges for your account from the <a href="https://market.decentraland.org/settings">settings page</a>. Once you have authorized the Marketplace to operate MANA and LAND on your behalf, you’re ready to start trading!</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*fKa3bRQZ547I1L7d." alt=""></p>
+<p>Aside from the small gas fee required by the miners for every transaction conducted on the Ethereum network, Decentraland does not collect any surplus trading fees.</p>
+<p>If you have another account that you want to move your LAND to, or if you want to send LAND to a friend without charging them any MANA, you can make a direct transfer to any other wallet address simply by clicking <strong>Transfer</strong> from that parcel’s page.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*GtoyTpJk7UwjE1Vi." alt=""></p>
+<h2>Providing Feedback</h2>
+<p>We’ve worked to ensure that the Marketplace is simple and easy to use, but if you ever have questions or feedback, please reach out to us using the in-app Intercom widget.</p>
+<p>For a more in-depth orientation to the Marketplace, <a href="https://youtu.be/uyuaN1OdOh4">checkout our video tutorial here</a>!</p>
+<p>As with all of our other tools, the Marketplace is open-source software, and <a href="https://github.com/decentraland/marketplace">you can find the code here</a>. Feel free to create an issue, or submit a pull-request!</p>
+<h1>Keep up to date with our latest developments</h1>
+<p>Stay in touch with us, and learn more about Decentraland, through:</p>
+<ul>
+<li>Our <a href="http://chat.decentraland.org/">community chat</a>.</li>
+<li>Subscribing to <a href="https://decentraland.org/">email updates</a> on our mailing list.</li>
+<li>Following us on <a href="https://twitter.com/decentraland">Twitter</a>.</li>
+<li>Subscribing to our <a href="https://www.reddit.com/r/decentraland/">subreddit</a>.</li>
+<li>Our <a href="https://t.me/DecentralandTG">Telegram</a>.</li>
+<li><a href="https://developers.decentraland.org">Get started with the SDK!</a></li>
+</ul>
+<hr>
+<p><em>We hope you like the first version of our Marketplace like we do. We have many features in mind coming after this version, stay tuned!</em></p>
+<p><em>See you all in the Metaverse.</em></p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2018-03-19/</link>
+      <guid>/posts/post-2018-03-19/</guid>
+      <pubDate>2018-03-19T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>An experiment about portable intelligence</title>
+      <description>An experiment about portable intelligence</description>
+      <content:encoded><![CDATA[<p>One of the things about machine learning that excites me is how a neural network creates a compact representation of the world that could be portable and used in any mobile device not only on centralized server farms.</p>
+<p>You train a model using gigabytes of data and the end result may only take 10 MB and perform a specific task with high performance. The process of learning is slow but inference is fast and pretty lightweight.</p>
+<p>Why is this? A neural network has a roughly fixed size of parameters based on the number of neurons and connections between them. When you train it, you squeeze data through these connections of neurons and they get gradually configured to solve an optimization problem that reduces the error in a cost function that compares the predicted output and the true value. This process is called learning. Once trained, the neural network can decide and make predictions based on novel inputs. Even if you feed more data, the model will not increase in size unless you change the architecture. The other thing is that the original data is forever lost, the process of learning is lossy, the model just keep an essence of the instances it saw in the form of learned features.</p>
+<p>This opens the opportunity to pack a small chunk of &quot;intelligence&quot; which is smart enough to perform a task, in a decentralized way, without any round trip to servers to take a decision.</p>
+<h2>The experiment</h2>
+<p>The goal of the experiment is not about fine tuning the model and get the best accuracy, but about learning on the server and doing all the inference client side in the browser. For this purpose I used a dataset from my friends from <a href="https://popchest.com">Properati</a> with real-state images. The idea is to tell apart images which are renders from the real ones.</p>
+<p>I used the following tech to implement it:</p>
+<ul>
+<li>A Python script to scale all images to 200x200, standardizing the colorspace and format.</li>
+<li>A convolutional neural network for extracting the features that define if an image is a render or a real house, I didn't want to do any type of feature engineering or image processing apart from scaling.</li>
+<li>For this purpose I decided to use <a href="https://keras.io/">Keras</a> on top of <a href="https://www.tensorflow.org/">Tensorflow</a>. Keras is a high-level deep learning library, well documented and written in ❤️ Python. It abstract many of the complexities if you would write code your directly in Tensorflow. Many thanks to <a href="https://github.com/fchollet">François Chollet</a> for his contribution :)</li>
+<li>Do all the inference client side in the browser using <a href="https://github.com/transcranial/keras-js">Keras.js</a> a Javascript implementation of Keras.</li>
+<li>Train the model on my own GPU at home (Nvidia GTX 1080).</li>
+<li>The site is built using <a href="https://github.com/zeit/next.js/">Next.js</a> framework.</li>
+</ul>
+<p>The model was trained using around 60.000 real-state images around 50% for each class, a total of 600MB of data.</p>
+<h2>The result</h2>
+<p>The resulting model takes 2MB, and perform inference pretty fast on my Macbook Pro 13.</p>
+<p>You can test it on your own computer <a href="https://rendernet.abarmat.com">https://rendernet.abarmat.com</a></p>
+<p>I would be interesting to try different types of tasks apart from a binary classification, like style transfer, GAN, real-time pattern recognition, etc.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*DJIjF4QGm0I-S30_D8adjA.png" alt=""></p>
+<h2>What do I like about all this?</h2>
+<p>I think there are several advantages about neural networks apart from the obvious ability to identify patterns and predict outcomes.</p>
+<ul>
+<li><strong>Privacy:</strong> If you don't need to send your data to a server, your data is protected as all decision making is done right on your device.</li>
+<li><strong>Decentralization:</strong> All these models working as standalone agents mean that they will be resilient to server outages, network delays, and censorship.</li>
+<li><strong>Online learning:</strong> Learning is a slow process, but with future improvements in dedicated processors we could have millions of devices learning different strategies which will add diversity to avoid having a single machine-learning model failing massively on certain decisions. Much like we humans learn from our different experiences.</li>
+</ul>
+<hr>
+<p><em>Code is available on GitHub -&gt;</em> <a href="https://github.com/abarmat/rendernet"><em>https://github.com/abarmat/rendernet</em></a></p>
+<p><em>If you try it send me any feedback!</em></p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2017-11-07/</link>
+      <guid>/posts/post-2017-11-07/</guid>
+      <pubDate>2017-11-07T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>A dive into decision making</title>
+      <description>A dive into decision making</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.  — Amelia Earhart</p>
+</blockquote>
+<p>Decisions are a tricky thing.</p>
+<p>Many times I wondered about how the decision making process works in our mind. We are constantly deciding about things, whether at work, personal life or shopping. Some decisions are automatic. They are programmed in our brain and we might not even realize about them, however some others awake the full spectrum of our emotions: fear, regret, anger, sadness, obsession. These emotions are amplified according to each individual personality and life experience but we all feel the storm to some degree.</p>
+<p>But, what are the differences between these two type of decisions? The automated ones are related to things that we have incorporated as part of our routine, maybe we did it so many times that we don't perceive them as a risk to our survival. On the other hand, the &quot;hard&quot; choices are the ones that in our mind could change our life, we perceive them as a menace to our existence, an option with no point of return, it increases our stress level, anxiety and fires all type of emotions in our brain.</p>
+<p>Some things that may happen to us while deciding:</p>
+<ul>
+<li>As in our mind we perceive the decision as life changing and a menace to our survival, we want to minimize any error and we want to make the perfect choice.</li>
+<li>We typically don’t account for the wasted time and the mental drain. The mental burden of untaken decisions takes a toll on your mental health in the form of stress, low self-esteem, feelings of gilt, etc. This can be an unconscious process.</li>
+<li>There’s an opportunity cost associated with every decision, the longer you postpone it the more expensive it gets. You could have done other thing with your time.</li>
+<li>We think that by having more and more information you will make a better decision but it’s not a linear function, above a certain limit, more data will not help.</li>
+<li>We may not want to feel responsible for our own decisions and we just leave them to just happen or be made by other person. I can say that it feels way better when you make your own decisions.</li>
+<li>We wait for a <a href="https://en.wikipedia.org/wiki/Casus_belli">casus belli</a>: “I was forced to take this decision for some external reason”. This way your decision gets justified transferring the weight of responsibility to other circumstance.</li>
+<li>We wait with the hope that it may become irrelevant in the future. When some matter need your action rarely disappear.</li>
+</ul>
+<p>Something I learned is that whenever you have an important decision at hand and you postpone it, it accumulates and compound over time, like the interest on a debt. It ends up taking more and more mental energy. It’s even worse if it’s an important matter you know you should take action on and you got stuck in a crisis of analysis.</p>
+<p>But how do we balance impulsiveness and thoughtfulness. Taking blink eye decision every time using your gut feeling is not always the best solution, as some things may need a more through analysis.</p>
+<p>So, how do I get the right balance?</p>
+<ul>
+<li>Search your feelings and calibrate yourself to know when “it doesn’t feel right” or &quot;it feels like the right thing&quot;. You can only train it by taking decisions and learning from your mistakes and successes along the way.</li>
+<li>Focus on the goal of making good decisions not perfect ones.</li>
+<li>Set an artificial deadline and respect it.</li>
+<li>After you made a decision look to the future. You can learn from past outcomes but not change them, use it to know yourself better for the next ones.</li>
+</ul>
+<p>In the case of lingering decisions I have the feeling that sometimes we know what we want but we pospone it until we find the right story for us to fit it in our mental model, in a way we want to be able to explain why, it's not necessary that the explanation is right, but we need that to move forward.</p>
+<p>In my experience most of the struggle has always been during the process of having an open decision, once it's taken the burden is lifted and I feel more energized and happy.</p>
+<hr>
+<p><em>If you liked the article, write me with your hacks for making &quot;hard&quot; choices.</em></p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2017-10-07/</link>
+      <guid>/posts/post-2017-10-07/</guid>
+      <pubDate>2017-10-10T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>Web + Money</title>
+      <description>Web + Money</description>
+      <content:encoded><![CDATA[<p>As part of my work at PopChest exploring new ways to help content creators using blockchain technologies I set up an experimental Revenue Share smart contract to automatically distribute funds among different beneficiaries in a trustless and transparent way.</p>
+<p>It basically works by adding a number of members to the contract indicating their corresponding shares of participation, once the contract is deployed all the payments sent to it will increase the balance ready to be claimed by each of the beneficiaries in the proportion they own.</p>
+<h2>Use cases</h2>
+<p>A contract that split payments to multiple parties can be used in different scenarios, a group of artists that want to set in advance how their proceeds will be distributed, affiliate programs where each party configures the fees and all the payments are sent to the contract, etc. As an added benefit it also gives every party a way to audit all the transactions going in and out.</p>
+<h2>Considering costs when programming</h2>
+<p>When you have programmable money and a distributed network that operates based on incentives you have a whole new dimension of decisions to make, it's not only about function, speed and security but also on who pays for what and the friction related to that.</p>
+<p>One of the design decisions while building the contract was when to distribute the funds received. The problem is that every transaction that updates the state in Ethereum pay some fees to the network and that means as a developer that you can decide who pays this cost depending on what code is executed and when. I decided to avoid distributing payments as soon as they arrive to the contract, that would mean extra gas costs to the sender, I wanted to keep the payment part as standard as possible. Instead, as a beneficiary you send a claim transaction when you are ready to withdraw your balance which will calculate your take and send it to your account.</p>
+<p>Another consideration about costs was that whenever you wanted to create a new Revenue Share contract with your own terms you had to deploy the whole code over and over. To avoid that, the contract is deployed once using a Factory Contract which provide a function to create a Revenue Share contract with the client's parameters.</p>
+<h2>Building something for humans</h2>
+<p>Then it was time to build a user interface to make the process of managing your contract easily, that means deploying a new contract, watching for changes in the balance and allowing the withdrawal of funds.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*qS9KqulUSlvwpw8CIV0R9w.png" alt=""></p>
+<p>Some challenges and friction points when building for decentralization:</p>
+<ul>
+<li><strong>Wallet</strong>: A vital component to participate on any app using a blockchain is the wallet. It holds the private keys to sign transactions on your behalf. This wallet can live in your <a href="https://metamask.io/">browser</a>, your <a href="https://status.im/">mobile phone,</a> a <a href="https://www.ledgerwallet.com/">hardware wallet</a>, even a <a href="https://www.myetherwallet.com/">piece of paper</a>. Some services generate their own wallet when you visit them for the first time and store it encrypted on the local storage of the web browser. The empowerment of users having the choice of managing their own wallets and funds is a big change which require a great responsibility from each user on how to use and secure their keys. For convenience this app is currently using <a href="https://metamask.io/">Metamask</a> which provides a wallet as a browser extension which you can use across different sites.</li>
+<li><strong>Transactions take time:</strong> Whenever you do a transaction on the blockchain you need to wait for it to be mined by the network which can take many seconds. Users are used to millisecond response times on the centralized web, it's important to show proper feedback while the action completes. This can be done different ways, from loading indicators, to queueing multiple actions in the background and letting the user to continue the interaction with the app. Some Dapps show the transaction hash broadcasted to the network as a way to provide a handle to monitor it on <a href="https://etherscan.io">Etherscan</a> in case of any trouble.</li>
+<li><strong>Transactions cost Ether (money)</strong>: As any transaction on the network pays some fees for it's computation it adds a new dimension to the development. Now you have to decide which actions to do on-chain or off-chain, which of them generate friction and to whom is best to assign this cost.</li>
+<li><strong>Authentication:</strong> Blockchains are permissionless systems, you don't need to create an account on a centralized service to operate, typically your &quot;account&quot; is your public key and you prove you own your key by signing transactions with your private key. This is a concept very strange to most new users, it requires education as people get exposed to services using crypto. A service could optionally register users in a central database with metadata related to the public key like an avatar or profile. Authentication is not the same as Identity, if you need to prove that someone is some human being in particular there are some project working on this challenge like <a href="https://www.uport.me/">uPort</a> and <a href="https://www.civic.com/">Civic</a>.</li>
+<li><strong>Handling exceptions:</strong> There are many exceptional conditions and confusion that can happen along the way, some of them related to Ethereum like out of gas exceptions, user rejecting to sign a transaction, timeouts, sending a transaction to a wrong address, no funds available, etc. I think a good designed UX should avoid users to make most of these mistakes, for instance disabling or hiding buttons if they shouldn't be available, reading the contract data and finding out if the action can be performed and preventively guiding the user in other directions.</li>
+<li><strong>Network:</strong> When you build an app based on any blockchain whether be Bitcoin, Ethereum or other, there are typically multiple testing platforms called <em>testnets</em> apart from the <em>mainnet</em> or production blockchain. The app should state clearly in which network it's operating to avoid any confusion, however first-time users typically have a hard time understanding what this is all about even though most of the wallets let you select to which network to connect.</li>
+</ul>
+<p>As we get more DApps in the open we will develop some standards and best practice on how to provide predictable and easy-to-use applications combining centralized with decentralized elements.</p>
+<hr>
+<p>Take a look at the <a href="https://github.com/popchest/popchest-contracts">contract code</a> and the <a href="https://github.com/popchest/popchest-contracts-dapp">DApp code</a> on GitHub.</p>
+<p>You can play with the contract running on the Ropsten testnet at <a href="https://smart.popchest.com">https://smart.popchest.com</a></p>
+<p>Send feedback and questions!</p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2017-09-17/</link>
+      <guid>/posts/post-2017-09-17/</guid>
+      <pubDate>2017-09-17T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>The sound of silence</title>
+      <description>The sound of silence</description>
+      <content:encoded><![CDATA[<p>About 15 years ago I used to go to hard rock and heavy metal music concerts every once in a while with my friends. Every night going back home after the show I had the typical buzzing sound in my ears that you get after hearing loud music and then disappears after a couple of hours.</p>
+<p>One night after a <a href="https://en.wikipedia.org/wiki/Mot%C3%B6rhead">Motörhead</a> concert I got back to sleep but this time it was going to be different. I woke up the next day and the ringing was still there. I wasn't really worried as I thought it had to disappear as it always did. The next day it was still there, and the next too…</p>
+<p>After going to different doctors and being performed several tests I learned that the ringing had a name &quot;<a href="https://www.ata.org/understanding-facts">Tinnitus</a>&quot; and it's a very common condition in workers exposed to high noise environments (construction, airport operators, factories, etc.) when they don't protect themselves properly. I also discovered some limitations of the human body that I had never thought about. Lastly, I was told that it was permanent and nothing could be done.</p>
+<p>The first weeks were like living in hell. Sleeping was difficult, I had trouble concentrating and my anxiety levels were through the roof. I was in college at that time and I started to get these depressing ideas like &quot;I won't be able to study again with this thing on my head&quot;, &quot;I won't perceive true silence again in my life&quot;. Many cups of tea and weeks after, I started to relax, and with the passing months, I began to accept the new normal. I went back to business as usual, the sound is there but I learned to &quot;don't care&quot; most of the time.</p>
+<p>For me, it was a test of patience and resilience. I had to switch to positive to recover from that experience which takes you down to the bottom.</p>
+<p>3 years ago I had a new big episode after being careless and exposing myself to harmful levels of sound. As I already had had some experience I had some tools to manage it but anyways I suffered a lot again as it puts your mind and emotions under a lot of stress, fear, anxiety and catastrophic thinking. «Will I adapt to this sound again this time??»</p>
+<p>I try to avoid places with excessive noise and to make people conscious about the dangers of loud sound. I find it hard sometimes as the average loudness of modern society is quite high. There are literally millions of people out there with some degree of tinnitus due to sound pollution.</p>
+<hr>
+<p><em>If you ever had or you are going through an adaptation process to tinnitus lets be in touch.</em></p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2017-04-10/</link>
+      <guid>/posts/post-2017-04-10/</guid>
+      <pubDate>2017-04-10T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>Word similarity using product discount data</title>
+      <description>Word similarity using product discount data</description>
+      <content:encoded><![CDATA[<p>Among all the branches of machine learning I'm really interested in unsupervised learning, basically discovering structure in the data without any specific purpose. It is already being used as a way to &quot;bootstrap&quot; other models, extracting features from data and then using a supervised model to put labels on it using training examples.</p>
+<p>Some months ago reading about different models I came across Word2vec. Word2vec is a model that let you learn features from text, created by Tomas Mikolov and his friends from Google and detailed in the paper <a href="http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Distributed Representations of Words and Phrases and their Compositionality</a>. Some people say it's semi-supervised because it uses a target function to learn the context of every word in the corpus. It's based on a shallow neural network (1 hidden layer) which is really fast to train and gives you a matrix of M x N (M: vocabulary size and N: number of features). Studying the distance between different vectors that compose this matrix we can find which words are used in similar contexts.</p>
+<p>I decided to give it a try with a dataset from <a href="http://oony.com">Oony</a>, a deal-aggregator service I created with <a href="https://ar.linkedin.com/in/chentschel">Cristian Hentschel</a>. We collected data from more than 150M coupons and products on discount published around the world. As the dataset is quite large I just used a subset from the <em>UK</em> and only in the <em>electronics &amp; technology</em> category.</p>
+<p>Some characteristics about the dataset:</p>
+<ul>
+<li>1132643 records.</li>
+<li>I used only the title and description field.</li>
+<li>Title average length is 61 chars.</li>
+<li>Description average length is 94 chars.</li>
+</ul>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*5HbBubbVqIfpb3B6_ImtOA.png" alt="">
+<sub>Example data</sub></p>
+<p>Questions:</p>
+<ul>
+<li>Is there any structure in the data?</li>
+<li>Will it work well with short titles and descriptions from deals?</li>
+</ul>
+<h2>Getting the word embedding</h2>
+<ol>
+<li>Ran a Python script to extract a text dump of title+description from a PostgreSQL database where all the deals are stored.</li>
+<li>Stripped html tags, converted all to lowercase and removed stopwords using NLTK. Applied the Wordnet lemmatizer to reduce the vocabulary size.</li>
+<li>Saved a 136MB file to disk with a concatenation of all the processed text.</li>
+<li>I used Tensorflow with a modified version of the <a href="https://github.com/tensorflow/models/blob/master/tutorials/embedding/word2vec_optimized.py">word2vec_optimized</a> script, setting the window_size to 2 and embedding size to 200. (I also tried gensim but found the Tensorflow version faster).</li>
+<li>The vocabulary size was of 131718 words and ran the training set for 15 epochs.</li>
+</ol>
+<p><img src="https://cdn-images-1.medium.com/max/1200/1*q9BGV6ksPL2d53r57MaOEg.png" alt="">
+<sub>Word2vec using Tensorflow</sub></p>
+<h2>Visualization</h2>
+<p>As a result of processing the dataset through Word2vec I got a matrix of 131718 x 200. As it's high dimensional data and impossible to visualize I applied a <a href="https://lvdmaaten.github.io/tsne/">t-SNE</a> transformation to reduce the matrix and projecting it into a plane. I selected only the top 500 words by frequency from the vocabulary and ran the transformation with a perplexity of 30 and 5000 iterations (tried with different values to see what looked good). There's a good guide on interpreting t-SNE and its hyper-parameters on the &quot;interesting resources&quot; section below.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1200/1*d7Tp3qin4bCEK_wWUMP-pg.png" alt=""></p>
+<h2>Conclusions</h2>
+<p>From the chart we can see clumps of words which share similar contexts, for instance colors on the middle right side, computer parts on the top left, and electronic brands on the lower right. There's a bunch of selling/marketing words (perfect, unique, ideal, special, best, great, excellent) on the lower left.</p>
+<p>Some applications of the embedding info I can think of are: using it for improving search relevance of related terms, creating relationship between different deals, identifying entities which can help tag different attributes of the deals and products.</p>
+<p>Other experiments that would be nice to test are: trying with different embedding/window size, running the process without removing stopwords to see if it retains context information better, using a much larger dataset to see what structure emerge.</p>
+<hr>
+<h2>Interesting resources</h2>
+<ul>
+<li>
+<p><a href="https://rare-technologies.com/word2vec-tutorial/" title="https://rare-technologies.com/word2vec-tutorial/">Word2vec Tutorial</a><a href="https://rare-technologies.com/word2vec-tutorial/"></a></p>
+</li>
+<li>
+<p><a href="https://www.tensorflow.org/tutorials/word2vec/" title="https://www.tensorflow.org/tutorials/word2vec/">Vector Representations of Words | TensorFlow</a><a href="https://www.tensorflow.org/tutorials/word2vec/"></a></p>
+</li>
+<li>
+<p><a href="http://distill.pub/2016/misread-tsne/" title="http://distill.pub/2016/misread-tsne/">How to Use t-SNE Effectively</a><a href="http://distill.pub/2016/misread-tsne/"></a></p>
+</li>
+</ul>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2017-01-16/</link>
+      <guid>/posts/post-2017-01-16/</guid>
+      <pubDate>2017-01-16T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>Starting from scratch: 2007 vs 2016</title>
+      <description>Starting from scratch: 2007 vs 2016</description>
+      <content:encoded><![CDATA[<p>I started my first company in 2007. It’s been almost a 10-year journey with many ups and downs along the way. I had the chance to meet incredible people and do great projects, I have also learnt many things down the road, often by trial and error.</p>
+<p>Reflecting back on my first steps ten years ago, I can't help to notice that a couple of things were a bit different than today.</p>
+<h2><strong>Office &amp; Infrastructure</strong></h2>
+<p>We borrowed an office from my co-founder’s uncle, we hired an Internet service provider, got a phone number, put on some minimal furniture and went to work. God, I remember how we struggled with our first coffee machine 😊. Every bit of those things are very exciting when first starting, however, they make you lose focus from what's important and provide false clues of progress. While having your own place is really cool it also comes with some burden: paying expenses, a cleaning service, connectivity, office supplies, furniture, insurance, repairs, etc.</p>
+<p>Today there are many options for shared workplaces like WeWork in the US and AreaTres and Urban Station in Buenos Aires. Working remotely is culturally now much more acceptable, along with plenty of tools like Slack, Trello, Skype and Hangouts to coordinate distributed teams, making it easier to postpone spending energy on a physical place from day 1.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*j5cYAZ1vzkE_nHmf3nr1sg.png" alt="Urban Station">
+<sub>Urban Station</sub></p>
+<h2>Hosting</h2>
+<p>If you wanted to host your app in 2007 you could use some of the available hosting services by that time with limited customization, but if you needed full control you had to buy a server, install everything on it and then rent a space at a data center for a total of thousands of dollars. Alternatively, you could just put a computer at the office risking power and network outages.</p>
+<p>Today there are many options to get a server instantaneously at a fraction of the cost through Amazon, Rackspace, Google Cloud and many others. You can start with a small server paying by the hour and then increase your spending as needed. Many people call this &quot;The Cloud&quot; :)</p>
+<h2>Network &amp; Landscape</h2>
+<p>During 2007, the investment activity was much lower than in the last years. Twitter had just 1 year old and Facebook 3 years old. The iPhone was not still invented, and mobile was in the single digit of Internet traffic.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*9EneVvvaydt5sB2frXeEcg.png" alt="PwC/NVCA MoneyTree Report, Data: Thomson Reuters">
+<sub><a href="https://www.pwcmoneytree.com/HistoricTrends/CustomQueryHistoricTrend">Source: PwC/NVCA MoneyTree Report, Data: Thomson Reuters</a></sub></p>
+<p>There wasn’t any accelerator or incubator program in place. Today Nxtp Labs, Wayra and others help entrepreneurs to connect much faster to a network of hundreds of other entrepreneurs and investors to get advice and capital, bringing more transparency to the deals and helping with the education of all parties.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*nZjrtEEIuHc7AR5lpE0h5A.png" alt="NXTP Labs"></p>
+<h2>Legal and Tax</h2>
+<p>Most of the first-time entrepreneurs I talk to ask me about the same things: When should I incorporate? Where? How do I invoice clients? How much will I pay in taxes? The cheapest thing for the long term is to get good advice from an accountant and a lawyer, the problem is that when you start you don't know the right questions to ask. I recommend not spending lots of money on the legal structure before you really know what you need.</p>
+<p>This part haven't changed so much in the last 100 years :), though lately some governments are trying to speed up some processes.</p>
+<p>I would like to see more advances in payments and the simplification of legal stuff. Many startups like Stripe (<a href="https://stripe.com/atlas">https://stripe.com/atlas</a>), Coinbase, LegalZoom, are challenging the bureaucracy imposed by a lagging tax system, legal and financial regulations but I feel they end up fighting against a system that is not willing to change so easily.</p>
+<p><em>Best of luck.</em></p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2016-04-18/</link>
+      <guid>/posts/post-2016-04-18/</guid>
+      <pubDate>2016-04-18T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Open Data and feed a smarter AI</title>
+      <description>Let&#39;s Open Data and feed a smarter AI</description>
+      <content:encoded><![CDATA[<p><img src="https://cdn-images-1.medium.com/max/800/1*0FlvitTZnPKh8qkJ7UPLeQ.png" alt=""></p>
+<blockquote>
+<p>Sharing is good, and with digital technology, sharing is easy.  — Richard Stallman</p>
+</blockquote>
+<p>Scientists and engineers are playing with different approaches to imitate intelligence, that is to replicate things humans can naturally do effortlessly to make sense of the information in our world. One of the most promising approaches is trying to simulate some functions of the brain by building artificial neural networks.</p>
+<h2>Artificial Neural Networks</h2>
+<p>Deep Learning is a technique that uses neural networks organized in multiple layers to learn from a massive amount of data and draw conclusions about it.</p>
+<p>Neural networks are built around a simple computational unit called <em>the</em> <em>neuron</em> connected to many others creating a <em>network</em>. Today, they are implemented using artificial neurons run by software that tries to imitate how the human brain works.</p>
+<h2>Biological Neural Networks. &quot;The Brain&quot;</h2>
+<p>The human brain is much more complex and really difficult to replicate as we are yet far from understanding it in full. It is estimated that there are <a href="http://journal.frontiersin.org/article/10.3389/neuro.09.031.2009/full">100 billion neurons</a> and thousands of trillions of synapsis.</p>
+<p>Thus far, artificial neural networks haven’t even come close to modeling the complexity of the brain, but they have shown to be good at problems which are easy for a human but difficult for a traditional computer, such as image recognition and predictions based on past knowledge.</p>
+<p><a href="http://blogs.scientificamerican.com/brainwaves/know-your-neurons-classifying-the-many-types-of-cells-in-the-neuron-forest/"><strong>Know Your Neurons: How to Classify Different Types of Neurons in the Brain's Forest</strong><br>
+</a></p>
+<h2>The Challenge</h2>
+<p>There are many teams of researchers around the world testing different models of neural network architectures and engineers figuring out new solutions using them.</p>
+<p>This technology has been in a hype during the last years as it’s being used increasingly in the industry to solve problems that were in the past reserved only to the human intellect. Although <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html">people started experimenting with neural networks in the 50’s</a>, it was not until the last years that a combination of a sheer volume of data to learn from, the use of GPU and massively parallel computing, and new learning approaches, made them practical to be applied to bigger challenges. <a href="http://www.wired.com/2014/01/geoffrey-hinton-deep-learning">Their advocates once called lunatics, now have the attention of the tech giants.</a></p>
+<p>Google, Facebook, IBM, Baidu and Microsoft among others, have been building internal teams for researching practical applications of this technology that could bring us a better understanding of the world we share every day in photos, videos, searches, audio, etc. They are even releasing many of the tools and frameworks their internal AI teams use: <a href="https://www.tensorflow.org/">Tensorflow</a>, <a href="http://research.microsoft.com/en-us/projects/infernet/">Infer.NET</a>, <a href="https://research.facebook.com/ai/">Facebook AI</a>.</p>
+<h2>Why is Open Data more important than ever?</h2>
+<p>As of today, for this technology to work we need <em>a lot of data</em>. Most of the biggest tech companies leverage their gigantic databases to find new solutions and insights. Although their sharing of tools is useful to the community, we need to do more to open more data to the public to move the field faster.</p>
+<p>Maybe the new <a href="https://openai.com">Open AI non-profit</a> could be used as a hub to share many more public datasets along with the tools.</p>
+<hr>
+<p>I believe that this technology has the potential to increase the productivity of our civilization multiple times thus giving us more free time. We all will benefit from opening more data to the world so multiple teams and startups that might be working on new ideas may use it to <strong>make a smarter AI and find the answers much needed by our society</strong>.</p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2015-12-28/</link>
+      <guid>/posts/post-2015-12-28/</guid>
+      <pubDate>2015-12-28T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>Into the curves of happiness</title>
+      <description>Into the curves of happiness</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>And once the storm is over, you won’t remember how you made it through, how you managed to survive. But one thing is certain. When you come out of the storm, you won’t be the same person who walked in. That’s what this storm’s all about. — <a href="http://www.goodreads.com/author/show/3354.Haruki_Murakami">Haruki Murakami</a></p>
+</blockquote>
+<p>During my life, I've seen people react very differently to positive and negative experiences and how they incorporate those events into their lives. It has always seemed to me that although we are all facing ups and downs in our happiness levels some people seems to be fairly unhappy no matter what and other people pretty happy regarding their struggle.</p>
+<p>The <strong>comfort zone</strong> is often described as a behavioral space where activities and behaviors fit a routine and pattern that minimizes stress and risks. In other words, it’s a state of energy conservation that we use to deal efficiently with the many tasks we do every day without constantly wasting excessive mental resources.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*w411JGrQGYPQjbv19ao45g.png" alt=""></p>
+<p>However this natural strategy of our mind has a fundamental flaw, although you feel safe hidden in your routine, it could make you stop experimenting and exposing yourself to new experiences with the potential to make you better and to bring happiness to your life.</p>
+<p>Some people are better than others in maintaining their drive, they try new things and push the boundaries in whatever activity they do. However most of us need some external stimulus and a bit of practice to move away from the inertia of routine, it’s not enough to be conscious about it to escape.</p>
+<p>Breaking from the comfort zone it’s not only about overcoming the fear of facing new challenges, but also gaining perspective about the world and what you could do. You gain perspective by talking to positive people, relating to others, seeing what they do and what you could do too. You also improve your perspective by making mistakes. Sometimes it requires that your boss, your teacher or trainer give you direction and tell you to do something to finally realize that you were able to attain a goal you thought impossible. I've seen it many times at work and Crossfit.</p>
+<h2>Some forces that keep you moving forward</h2>
+<ul>
+<li><strong>Motivation</strong>: You are really skilled at math! keep on the good work!</li>
+<li><strong>Authority</strong>: I want you to do 50 burpees, yes you can do it, no excuses!</li>
+<li><strong>Perspective</strong>: Why don’t you get a Master’s Degree in Marketing, I think it would be great for your career? Don't you think?</li>
+<li><strong>Competition</strong>: I bet you that I run faster than you.</li>
+<li><strong>Curiosity:</strong> A strong internal desire for knowing more and trying out things.</li>
+</ul>
+<h2>Hedonistic Adaptation</h2>
+<p>I found a theory about happiness that it’s called <strong>Hedonistic Adaptation</strong>. It says that happiness is not a state that we reach and we stay comfortably, instead one must continually “work” to maintain it at a certain level. So there is a baseline level of happiness that depends on the person, and when we experience positive events we feel better, but eventually the effect wear off and the change begins to be seen as the new normal.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*dvR_NFMV8PvxSQjwVosgAQ.jpeg" alt=""></p>
+<h2>But…how can we stay on the fun side of the curve?</h2>
+<p>One way is to avoid adaptation as much as possible, and that means staying outside your comfort zone, turning off autopilot and adding variety to your activities, learning new things, taking risks. Outcomes can be positive or negative but I bet that your experience will be far more valuable.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*EZDCS7iKl9ZooeowPkiVAw.jpeg" alt="">
+<sub>Borrowed from <a href="http://www.mrmoneymustache.com/2012/06/28/king-for-just-one-day/">http://www.mrmoneymustache.com/2012/06/28/king-for-just-one-day/</a></sub></p>
+<hr>
+<p>Whenever we face a new task or challenge we feel odd, embrace that feeling, the excitement of doing something new and incorporate it as part of the set of tools that help you dealing with your life.</p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2015-10-29/</link>
+      <guid>/posts/post-2015-10-29/</guid>
+      <pubDate>2015-10-29T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>Execute or think?</title>
+      <description>Execute or think?</description>
+      <content:encoded><![CDATA[<p><img src="https://cdn-images-1.medium.com/max/800/1*UFUv9B4-6yX60KHXIEtdzQ.jpeg" alt=""></p>
+<blockquote>
+<p>I am turned into a sort of machine for observing facts and grinding out conclusions.  — Charles Darwin</p>
+</blockquote>
+<p>I’ve been fascinated with technology since I was a child. My father bought me a computer when I was 10 years old after I insisted him so much. Before that, every time I had the chance I went over my friends house to play with computers. I learned to write software very young and I have always thought that knowing the art of programming was a kind of special power because you could make computers do things you had on your mind and bring your ideas to life. Things are changing fast and the once thought special ability might be transformed along with many other jobs.</p>
+<h2>Competing with the machine... or giving it a hand?</h2>
+<blockquote>
+<p>One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man. — Elbert Hubbard</p>
+</blockquote>
+<p>Computers since their inception rendered a great number of jobs obsolete and allowed many others to be carried out with increased efficiency, requiring a much less number of workers. The first jobs transformed were the ones related with calculations, repetitive, recording of operations, monitoring, moving of papers, copying, things that a computer could do faster and tirelessly.</p>
+<p>Lately, with the newest advances on AI (Artificial Intelligence) I read a heated debate over the next wave of jobs that would become “obsolete”. This time the revolution would be much more extensive as computers will do things we never really imagined and we thought only reserved to humans.</p>
+<p>Below is a chart taken from <a href="http://www.businessinsider.com/jobs-that-will-be-lost-to-robots-2014-1">Business Insider</a> depicting some calculations on how probably your job will be replaced by a robot in the next 20 years based on an article posted on The Economist about the <a href="http://www.businessinsider.com/the-future-of-jobs-the-onrushing-wave-2014-1">Future of Jobs</a>. <em>*I think they use the term Robot as it’s easier to give a physical shape to our fears, but more likely it will be a cold software running on the network.</em></p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*tsnZ_67Bzx0RuGo-O-NYEw.jpeg" alt="Probability of jobs getting obsolete according to The Economist.">
+<sub>Probability of jobs getting obsolete according to The Economist.</sub></p>
+<p>In the past, the progressive introduction of machines to <a href="https://www.agclassroom.org/gan/timeline/farmers_land.htm">agriculture reduced farming employment from 90% to 2% during the course of many decades</a>, productivity soared, freeing millions of people for other activities and leading to a change in the shape of society.</p>
+<p>Today, AI has the potential to make this migration from the industrial &amp; service sectors to a “new thing” much faster than ever before and causing a greater friction on society as jobs are still a fundamental part of our identity and way of living.</p>
+<p>Governments and society in general should be discussing on how we best transition to an hyper-productive superabundance economy and a world where working could be even optional, removing all obstacles to change and embracing new technology as a tool for freedom instead of a competition for fewer jobs.</p>
+<h2>Teachers not programmers.</h2>
+<blockquote>
+<p>The human brain is an incredible pattern-matching machine. — Jeff Bezos</p>
+</blockquote>
+<p>IA is turning into an incredible general-purpose pattern-matching machine resembling the human brain. It’s even capable of dreaming as shown by a <a href="http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html">Google Research.</a> See this <a href="https://goo.gl/photos/fFcivHZ2CDhqCkZdA">link for a full gallery</a>.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*8zjIe3Nc7PKGNecr-eUQBg.jpeg" alt="Neural net “dreams” — generated purely from random noise, using a network trained on places by MIT Computer Science and AI Laboratory.">
+<sub>Neural net “dreams” — generated purely from random noise, using a network trained on places by <a href="http://places.csail.mit.edu/"><em>MIT Computer Science and AI Laboratory</em></a></sub></p>
+<p>Computer programming will also be transformed. The job of a software developer is to give purpose to a piece of hardware by writing code with instructions on how to operate. In the process we create complex algorithms, applications and web pages that translate human requirements to a language that computers can understand, calculate and respond.</p>
+<p>AI will not need explicit programming as it will learn about information, much like we humans do. So very probably in the future, we will be more like educators, compiling the best data available and teaching them how to do things. Purpose will not be <em>hardcoded in the software</em> but will emerge as a consequence of the answers the machine can handle based purely on its prior education.</p>
+<hr>
+<p>Artificial Intelligence may or not be the ultimate creation of computer science, but it will surely have a great impact on our relation with our work and social identity, and even maybe it will help us getting a better understanding of our own minds.</p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2015-08-02/</link>
+      <guid>/posts/post-2015-08-02/</guid>
+      <pubDate>2015-08-02T00:00:00.000Z</pubDate>
+    </item>
+    
+    <item>
+      <title>To trust or not to trust the AI</title>
+      <description>To trust or not to trust the AI</description>
+      <content:encoded><![CDATA[<p><img src="https://cdn-images-1.medium.com/max/800/1*fFwPnutOc79NvD6z2g6sfw.jpeg" alt=""></p>
+<blockquote>
+<p>I do not fear computers. I fear the lack of them.   — Isaac Asimov</p>
+</blockquote>
+<p>I live in Buenos Aires. Every day I drive to work, it’s really not a long journey, however in the last decade the city got really full of cars and any accident or problem could easily double the time of my trip. I usually go by the same route but I always got a couple of alternative routes in mind just in case.</p>
+<p>I started using <strong>Waze</strong> to get driving directions as it estimates the travel time, shows traffic jams and obstacles reported by the community. I think it's a wonderful app, I’m quite a fan of it although I realized that it took me some time to stop thinking and trusting my decisions on this little piece of technology.</p>
+<p>At first, I found myself many times overriding the recommended route by the app and going my own way believing I knew the city better. Once, I crashed after taking a detour from the suggested route ☺ (hopefully no harm done!). After a certain time, I started to trust in the recommendations as it consistently got me faster to destination and now I practically blindly follow its suggestions.</p>
+<p>These personal experiences made me think about our relationship with technology and specifically with expert systems and artificial intelligence. Apps like Waze that assist you on an specific real-life use case will start to appear on different aspects of our decision making.</p>
+<p>Let’s see how we got to this.</p>
+<h2><strong>The Genesis</strong></h2>
+<p><img src="https://cdn-images-1.medium.com/max/400/1*e9K5d1b2OZisZ-7PiqtQjw.gif" alt="An early representation of the Internet and its connections from The Internet Mapping Project.">
+<sub>An early representation of the Internet and its connections from <a href="http://cheswick.com/ches/map/">The Internet Mapping Project.</a></sub></p>
+<p>The <strong>genesis</strong> of the Internet consisted on the interconnection of a few computers owned by universities and other organizations for research purposes.</p>
+<p>Some years later it took a big leap forward with the creation and popularization of the <strong>personal computer</strong> as it allowed the network access of millions of devices and with a much more general purpose, closer to the average consumer needs.</p>
+<p>Then the Internet developed senses, <strong>mobile devices</strong>: digital cameras, cellphones, GPS, weather sensors, wearables, etc. collecting information about our everyday life and plugging it to the network. We are the agents that connect the real world to the Internet through these devices, feeding it with a staggering <a href="http://aci.info/2014/07/12/the-data-explosion-in-2014-minute-by-minute-infographic/">5 exabytes of data every day</a> from <a href="https://www.domo.com/blog/2014/04/data-never-sleeps-2-0/">our interaction with the services we use</a>.</p>
+<p>So what will the future look like? The number of sensors will keep growing faster and faster as your home appliances, pets, cars, watches, homes, lights, connects to the network in a concept called the &quot;Internet of Things&quot;. According to Cisco, there will be around <a href="http://readwrite.com/2013/09/30/how-big-the-internet-of-things-could-become">50 billion &quot;things&quot; connected by 2020</a>.</p>
+<hr>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*g_WT9YsMyb9ivNALW50xQw.jpeg" alt=""></p>
+<h2>Getting Smart</h2>
+<p>Today the Internet is a powerful tool as it let us instantly get information from all around the world and share our voice with the same ease, however, data in most of the cases is still used by humans to take our own decisions.</p>
+<p>Computer science is in the search for a generalized pattern recognizer (<a href="http://www.computervisionblog.com/2015/03/deep-learning-vs-machine-learning-vs.html">see Deeplearning</a>) that could be applied to many different scenarios to create Artificial Intelligence and set the base for the next stage in the evolution and help create a Smart Network. When I say smart I mean that it will gradually take more and more decisions for us in different aspects of our lives.</p>
+<p>In the future, the AI will take into account many more factors when making predictions and identifying patterns that we humans cannot see, enabling it to make better judgments. As a consequence we will eventually trust the AI to offload a good part of our own decisions.</p>
+<p>Some questions I have regarding the future coexistence between humans and AI. Is it possible for an AI to develop cognitive biases as well as we human do? Will there be one general super-intelligent AI or we will have multiple AI with different &quot;personalities&quot; existing on the Internet? Will we educate AIs and then they’ll educate new generations of humans? How we will handle privacy issues, when simultaneously, sharing is key for AIs to help us making better decisions?</p>
+<p>I’ll write more thoughts about this on the following posts ☺</p>
+]]></content:encoded>
+      <link>https://abarmat.com/posts/post-2015-06-10/</link>
+      <guid>/posts/post-2015-06-10/</guid>
+      <pubDate>2015-06-10T00:00:00.000Z</pubDate>
+    </item>
+    
+  </channel>
+</rss>
