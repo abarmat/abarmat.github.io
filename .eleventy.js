@@ -63,11 +63,5 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     templateFormats: ["html", "njk", "md"],
-    // Site metadata
-    metadata: {
-      url: "https://abarmat.com", // Update this to your actual domain
-      title: "Ariel Barmat - Personal Site",
-      description: "Personal blog and thoughts on technology, AI, and more"
-    }
   };
 };

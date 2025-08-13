@@ -2,26 +2,35 @@
 permalink: /feed-atom.xml
 eleventyExcludeFromCollections: true
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Ariel Barmat</title>
-  <subtitle>Personal blog and thoughts on technology, AI, and more</subtitle>
-  <link href="https://abarmat.com/" rel="alternate" type="text/html"/>
-  <link href="https://abarmat.com/feed-atom.xml" rel="self" type="application/atom+xml"/>
+  <subtitle>{{ meta.description }}</subtitle>
+  <link href="https://abarmat.com/" rel="alternate" type="text/html" />
+  <link
+    href="{{ permalink | htmlBaseUrl(meta.base) }}"
+    rel="self"
+    type="application/atom+xml"
+  />
   <id>https://abarmat.com/</id>
-  <updated>{% if collections.posts.length > 0 %}{{ collections.posts[0].date.toISOString() }}{% endif %}</updated>
+  <updated
+    >{% if collections.posts.length > 0 %}{{
+      collections.posts[0].date | dateToRfc3339
+    }}{% endif %}</updated
+  >
   <author>
-    <name>Ariel Barmat</name>
-    <email>ariel@abarmat.com</email>
+    <name>{{ meta.author.name }}</name>
+    <email>{{ meta.author.email }}</email>
   </author>
   {% for post in collections.posts %}
+  {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(meta.base) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
-    <link href="{{ post.data.path }}" rel="alternate" type="text/html"/>
-    <id>{{ post.data.path }}</id>
+    <link href="{{ absolutePostUrl }}" rel="alternate" type="text/html" />
+    <id>{{ post.url }}</id>
     <updated>{{ post.date.toISOString() }}</updated>
     <summary>{{ post.data.title }}</summary>
+    <content type="html">{{ post.content | renderTransforms(post.data.page, meta.base) }}</content>
   </entry>
   {% endfor %}
 </feed>

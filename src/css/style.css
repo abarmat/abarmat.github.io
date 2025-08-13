@@ -794,6 +794,10 @@ hr::before {
   }
 }
 
+.post-content {
+  line-height: 1.5;
+}
+
 .post-list {
   padding: 0;
   margin: 0;
