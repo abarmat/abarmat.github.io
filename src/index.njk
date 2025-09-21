@@ -31,7 +31,7 @@ title: Home | abarmat.com
   </section>
   <hr />
   <section>
-    <h3><span>#</span> My Work</h3>
+    <h2><span>#</span> My Work</h2>
     <p>
       In 2020 I joined
       <a href="https://thegraph.com/" rel="noreferrer">The Graph</a> as a
@@ -76,12 +76,12 @@ title: Home | abarmat.com
     </p>
   </section>
   <section class="post-section">
-    <h3><span>#</span> Writing</h3>
+    <h2><span>#</span> Writing</h2>
     <ul class="post-list">
       {%- for post in collections.posts %}
       <li class="post">
         <a href="{{ post.url }}">{{ post.data.title }}</a>
-        <small class="post-date">- {{ post.date | dateFilter }}</small>
+        <small class="post-date">— {{ post.date | dateFilter }}</small>
       </li>
       {%- endfor -%}
     </ul>
