@@ -7,9 +7,12 @@ nav: posts
 <div class="post-content">
   <section>
     <h1>{{ title }}</h1>
+    <div class="publish-date">
+      {{ date | dateFilter }}
+    </div>
     {{ content | safe }}
   </section>
-  <sub
-    >Published on <a href="{{ path }}">{{ date | dateFilter }}</a></sub
-  >
+  <sub>
+    Originally published <a href="{{ path }}">{{ date | dateFilter }}</a>
+  </sub>
 </div>
