@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dateFilter", function (date) {
     return new Date(date).toLocaleDateString("en-US", {
       year: "numeric",
-      month: "long",
+      month: "short",
       day: "numeric",
     });
   });
