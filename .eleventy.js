@@ -1,7 +1,13 @@
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const cacheBuster = require("@mightyplow/eleventy-plugin-cache-buster");
 
 module.exports = function (eleventyConfig) {
+  // Add cache buster plugin
+  eleventyConfig.addPlugin(cacheBuster({
+    outputDirectory: "dist"
+  }));
+
   // Add RSS plugin
   eleventyConfig.addPlugin(pluginRss);
 
