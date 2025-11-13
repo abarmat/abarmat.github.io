@@ -824,6 +824,8 @@ section {
     font-size: 1.25rem;
     list-style-type: none;
     margin-bottom: 0.875rem;
+    display: flex;
+    align-items: baseline;
 
     h3 {
       padding: 0;
@@ -836,13 +838,16 @@ section {
 
     .post-date {
       color: #909090;
+      display: inline-block;
+      width: 6.5em;
+      text-align: right;
+      margin-right: 0.7em;
     }
   }
 }
 
 .post-section .post-list {
   padding: 0;
-  margin-left: 1.125rem;
 
   .post {
     list-style-type: circle;
@@ -915,8 +920,26 @@ section {
 }
 
 @media only screen and (max-width: 48rem) {
+  .content {
+    padding: 1.5rem;
+  }
+
   .feed-options {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .post-list .post-date {
+    display: none !important;
+  }
+
+  /* Add a bullet dot before post titles in the mobile view */
+  .post-list .post > a::before {
+    content: "•";
+    display: inline-block;
+    margin-right: 0.5em;
+    color: #909090;
+    font-size: 1.2em;
+    vertical-align: middle;
   }
 }
