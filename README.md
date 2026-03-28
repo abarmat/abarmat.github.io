@@ -23,6 +23,10 @@ yarn test
 - Keep local drafts in `src/drafts/`
 - `yarn build` blocks unexpected untracked content under `src/`
 
+### Provenance
+
+- The built site footer shows the published short commit hash
+
 ### Deploy
 
 ```

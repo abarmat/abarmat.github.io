@@ -16,6 +16,9 @@ function run(command, args, options = {}) {
   });
 }
 
+const headSha = run("git", ["rev-parse", "--short", "HEAD"]);
+const siteCommitSha = headSha.status === 0 ? headSha.stdout.trim() : "";
+
 const untracked = run("git", ["ls-files", "--others", "--exclude-standard", "--", "src"]);
 
 if (untracked.error) {
@@ -47,6 +50,10 @@ rmSync(distDir, { recursive: true, force: true });
 
 const build = spawnSync("yarn", ["eleventy", ...process.argv.slice(2)], {
   cwd: repoRoot,
+  env: {
+    ...process.env,
+    SITE_COMMIT_SHA: siteCommitSha,
+  },
   stdio: "inherit",
 });
 

@@ -45,6 +45,13 @@
     <main>
       {{ content | safe }}
     </main>
-    <footer></footer>
+    <footer class="site-footer">
+      <small>
+        2026
+      {% if meta.buildCommitSha %}
+        | {{ meta.buildCommitSha }}
+      {% endif %}
+      <small>
+    </footer>
   </body>
 </html>

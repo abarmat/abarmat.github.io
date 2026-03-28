@@ -30,6 +30,16 @@ function runBuild() {
   };
 }
 
+function getHeadShortSha() {
+  const result = spawnSync("git", ["rev-parse", "--short", "HEAD"], {
+    cwd: repoRoot,
+    encoding: "utf8",
+  });
+
+  assert.equal(result.status, 0, result.stderr ?? "failed to read git hash");
+  return result.stdout.trim();
+}
+
 function write(relativePath, content) {
   const target = path.join(repoRoot, relativePath);
   mkdirSync(path.dirname(target), { recursive: true });
@@ -99,6 +109,7 @@ This should stay private.
       path.join(repoRoot, "dist/tuned-to-the-mood-of-the-music/index.html"),
       "utf8",
     );
+    const shortSha = getHeadShortSha();
 
     assert.match(rss, /<lastBuildDate>[A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4}/);
     assert.match(rss, /<pubDate>[A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4}/);
@@ -111,6 +122,7 @@ This should stay private.
 
     assert.match(home, /<meta name="description" content="Personal blog and thoughts on technology, AI, and more"/);
     assert.match(home, /<link rel="canonical" href="https:\/\/abarmat\.com\/"/);
+    assert.match(home, new RegExp(`>${shortSha}<`));
 
     assert.match(
       post,
