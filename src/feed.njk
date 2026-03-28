@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
     <atom:link href="https://abarmat.com/feed.rss" rel="self" type="application/rss+xml"/>
     <language>en</language>
     {% if collections.posts.length > 0 %}
-    <lastBuildDate>{{ collections.posts[0].date.toISOString() }}</lastBuildDate>
+    <lastBuildDate>{{ collections.posts | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
     {% endif %}
     {% for post in collections.posts %}
     <item>
@@ -19,8 +19,8 @@ eleventyExcludeFromCollections: true
       <description>{{ post.data.title }}</description>
       <content:encoded><![CDATA[{{ post.templateContent | safe }}]]></content:encoded>
       <link>{{ meta.base }}{{ post.url }}</link>
-      <guid>{{ post.url }}</guid>
-      <pubDate>{{ post.date.toISOString() }}</pubDate>
+      <guid isPermaLink="true">{{ meta.base }}{{ post.url }}</guid>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
     </item>
     {% endfor %}
   </channel>

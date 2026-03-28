@@ -5,18 +5,18 @@
   "description": "Ariel Barmat : Personal Site",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
+    "start": "node scripts/build.mjs --serve",
     "dev": "yarn start",
-    "build": "eleventy",
+    "build": "node scripts/build.mjs",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "eleventy && gh-pages -d dist -b main"
+    "test": "node --test tests/site-build.test.mjs",
+    "deploy": "yarn build && gh-pages -d dist -b main"
   },
   "keywords": [],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abarmat/home"
+    "url": "https://github.com/abarmat/abarmat.github.io"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",

@@ -7,7 +7,7 @@ nav: posts
 <div class="content">
   <section>
     <ul class="post-list">
-      {%- for post in collections.post | reverse -%}
+      {%- for post in collections.posts -%}
       <li class="post">
         <small class="post-date">
           {{ post.date | dateFilter }}

@@ -1,9 +1,9 @@
 # Personal Site
 
-### Code
+### Dev
 
 ```
-yarn develop
+yarn dev
 ```
 
 ### Build
@@ -12,16 +12,19 @@ yarn develop
 yarn build
 ```
 
+### Test
+
+```
+yarn test
+```
+
+### Drafts
+
+- Keep local drafts in `src/drafts/`
+- `yarn build` blocks unexpected untracked content under `src/`
+
 ### Deploy
 
-Ensure gh-pages is installed.
-```
-yarn add gh-pages --dev
-```
-
-Push latest code to `dev` branch.
-
-Deploy to GitHub Pages.
 ```
 yarn deploy
 ```

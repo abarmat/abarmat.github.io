@@ -5,7 +5,7 @@ const cacheBuster = require("@mightyplow/eleventy-plugin-cache-buster");
 module.exports = function (eleventyConfig) {
   // Add cache buster plugin
   eleventyConfig.addPlugin(cacheBuster({
-    outputDirectory: "dist"
+    outputDirectory: "dist",
   }));
 
   // Add RSS plugin
@@ -20,30 +20,14 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  // Add a limit filter
-  eleventyConfig.addFilter("limit", function (array, limit) {
-    return array.slice(0, limit);
-  });
-
-  // Add a custom filter to create post snippets
-  eleventyConfig.addFilter("snippet", function (content, maxLength = 200) {
-    // Trim the snippet to the maximum length
-    if (content.length > maxLength) {
-      content = content.substring(0, maxLength) + "...";
-    }
-
-    return content;
-  });
-
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
       });
-      return minified;
     }
     return content;
   });

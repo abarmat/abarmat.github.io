@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% set pageTitle = title or meta.title %}
+    {% set pageDescription = description or meta.description %}
+    {% set canonicalUrl = page.url | htmlBaseUrl(meta.base) %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}" />
+    <link rel="canonical" href="{{ canonicalUrl }}" />
+    <meta property="og:site_name" content="{{ meta.title }}" />
+    <meta property="og:title" content="{{ pageTitle }}" />
+    <meta property="og:description" content="{{ pageDescription }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ canonicalUrl }}" />
+    <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="apple-touch-icon"
@@ -27,7 +39,6 @@
       title="Ariel Barmat"
       href="/feed.atom"
     />
-    <title>{{ title }}</title>
   </head>
 
   <body>

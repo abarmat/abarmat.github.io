@@ -27,8 +27,8 @@ eleventyExcludeFromCollections: true
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}" rel="alternate" type="text/html" />
-    <id>{{ post.url }}</id>
-    <updated>{{ post.date.toISOString() }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
     <summary>{{ post.data.title }}</summary>
     <content type="html">{{ post.content | renderTransforms(post.data.page, meta.base) }}</content>
   </entry>
