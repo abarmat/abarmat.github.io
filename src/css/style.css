@@ -282,8 +282,8 @@ h2 {
     color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 2rem;
-    3ine-height: 1.1;
+    font-size: 1.75rem;
+    line-height: 1.1;
 }
 
 h3 {
@@ -314,7 +314,7 @@ h4 {
     color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.1;
 }
 
@@ -419,7 +419,7 @@ p {
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -887,7 +887,7 @@ section {
 
 .projects h3 {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 1.25rem;
 }
 

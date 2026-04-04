@@ -1,5 +1,5 @@
 import { spawnSync } from "node:child_process";
-import { rmSync } from "node:fs";
+import { cpSync, mkdirSync, rmSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -47,8 +47,13 @@ if (unexpectedFiles.length > 0) {
 }
 
 rmSync(distDir, { recursive: true, force: true });
+mkdirSync(distDir, { recursive: true });
 
-const build = spawnSync("yarn", ["eleventy", ...process.argv.slice(2)], {
+cpSync(path.join(repoRoot, "src", "css"), path.join(distDir, "css"), { recursive: true });
+cpSync(path.join(repoRoot, "src", "assets"), path.join(distDir, "assets"), { recursive: true });
+cpSync(path.join(repoRoot, "CNAME"), path.join(distDir, "CNAME"));
+
+const build = spawnSync("bunx", ["eleventy", ...process.argv.slice(2)], {
   cwd: repoRoot,
   env: {
     ...process.env,

@@ -15,7 +15,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 
 function runBuild() {
-  const result = spawnSync("yarn", ["build"], {
+  const result = spawnSync("bun", ["run", "build"], {
     cwd: repoRoot,
     encoding: "utf8",
     env: {
@@ -38,6 +38,10 @@ function getHeadShortSha() {
 
   assert.equal(result.status, 0, result.stderr ?? "failed to read git hash");
   return result.stdout.trim();
+}
+
+function readJson(relativePath) {
+  return JSON.parse(readFileSync(path.join(repoRoot, relativePath), "utf8"));
 }
 
 function write(relativePath, content) {
@@ -122,11 +126,63 @@ This should stay private.
 
     assert.match(home, /<meta name="description" content="Personal blog and thoughts on technology, AI, and more"/);
     assert.match(home, /<link rel="canonical" href="https:\/\/abarmat\.com\/"/);
-    assert.match(home, new RegExp(`>${shortSha}<`));
+    assert.match(home, new RegExp(shortSha));
 
     assert.match(
       post,
       /https:\/\/medium\.com\/@abarmat\/tuned-to-the-mood-of-the-music-/,
     );
+  });
+
+  await t.test("repo command surface is Bun-first", () => {
+    const pkg = readJson("package.json");
+    const justfilePath = path.join(repoRoot, "justfile");
+
+    assert.match(pkg.packageManager, /^bun@/);
+    assert.equal(existsSync(justfilePath), true, "justfile should exist");
+
+    const justfile = readFileSync(justfilePath, "utf8");
+
+    assert.match(justfile, /^default:/m);
+    assert.match(justfile, /^install:/m);
+    assert.match(justfile, /^dev:/m);
+    assert.match(justfile, /^build:/m);
+    assert.match(justfile, /^test:/m);
+    assert.match(justfile, /^deploy:/m);
+    assert.equal(existsSync(path.join(repoRoot, "bun.lock")), true, "bun.lock should exist");
+    assert.equal(
+      existsSync(path.join(repoRoot, "yarn.lock")),
+      false,
+      "yarn.lock should be removed",
+    );
+  });
+
+  await t.test("bun install security policy is configured", () => {
+    const pkg = readJson("package.json");
+    const bunfigPath = path.join(repoRoot, "bunfig.toml");
+    const readme = readFileSync(path.join(repoRoot, "README.md"), "utf8");
+
+    assert.equal(existsSync(bunfigPath), true, "bunfig.toml should exist");
+
+    const bunfig = readFileSync(bunfigPath, "utf8");
+    const scannerVersion = pkg.devDependencies?.["@socketsecurity/bun-security-scanner"];
+
+    assert.equal(
+      typeof scannerVersion,
+      "string",
+      "scanner should be a declared dev dependency",
+    );
+    assert.doesNotMatch(
+      scannerVersion,
+      /^[~^]/,
+      "scanner dependency should be pinned exactly",
+    );
+    assert.match(
+      bunfig,
+      /^\[install\.security\]\nscanner = "@socketsecurity\/bun-security-scanner"$/m,
+    );
+    assert.match(bunfig, /^\[install\]$/m);
+    assert.match(bunfig, /^minimumReleaseAge = 604800$/m);
+    assert.match(readme, /Socket scanner/i);
   });
 });

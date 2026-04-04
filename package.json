@@ -6,11 +6,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node scripts/build.mjs --serve",
-    "dev": "yarn start",
+    "dev": "node scripts/build.mjs --serve",
     "build": "node scripts/build.mjs",
     "format": "prettier --write src/**/*.{js,jsx}",
     "test": "node --test tests/site-build.test.mjs",
-    "deploy": "yarn build && gh-pages -d dist -b main"
+    "deploy": "node scripts/build.mjs && gh-pages -d dist -b main",
+    "spellcheck": "cspell lint --no-progress"
   },
   "keywords": [],
   "license": "MIT",
@@ -21,11 +22,13 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@mightyplow/eleventy-plugin-cache-buster": "^1.1.3",
+    "@socketsecurity/bun-security-scanner": "1.1.2",
+    "cspell": "^9.7.0",
     "gh-pages": "^6.1.1",
     "html-minifier": "^4.0.0"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^2.0.4"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "bun@1.3.5"
 }

@@ -3,13 +3,14 @@ layout: base.njk
 ---
 
 <div class="content">
-  <div class="bio-id nav">
-    <a href="/">
-      <img class="avatar" src="/assets/images/avatar.jpg" alt="AB" />
-    </a>
-    <h1>
-      <a href="/">Ariel Barmat</a> <span>/ <a href="/{{ nav }}">{{ nav }}</a></span>
-    </h1>
-  </div>
-  {{ content | safe }}
+    <div class="bio-id nav">
+        <a href="/">
+            <img class="avatar" src="/assets/images/avatar.jpg" alt="AB" />
+        </a>
+        <h1>
+            <a href="/">Ariel Barmat</a>
+            <span>/ <a href="/{{ nav }}">{{ nav }}</a></span>
+        </h1>
+    </div>
+    {{ content | safe }}
 </div>

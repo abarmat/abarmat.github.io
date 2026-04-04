@@ -6,14 +6,12 @@ permalink: "/{{ title | slugify }}/"
 ---
 
 <div class="post-content">
-  <section>
-    <h1>{{ title }}</h1>
-    <div class="publish-date">
-      {{ date | dateFilter }}
-    </div>
-    {{ content | safe }}
-  </section>
-  <sub>
-    Originally published <a href="{{ path }}">{{ date | dateFilter }}</a>
-  </sub>
+    <section>
+        <h1>{{ title }}</h1>
+        <div class="publish-date">{{ date | dateFilter }}</div>
+        {{ content | safe }}
+    </section>
+    <sub>
+        Originally published <a href="{{ path }}">{{ date | dateFilter }}</a>
+    </sub>
 </div>

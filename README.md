@@ -3,25 +3,37 @@
 ### Dev
 
 ```
-yarn dev
+just dev
 ```
 
 ### Build
 
 ```
-yarn build
+just build
 ```
 
 ### Test
 
 ```
-yarn test
+just test
 ```
+
+### Install
+
+```
+just install
+```
+
+### Install Security
+
+- `bun install` runs Socket scanner checks before packages are installed
+- New packages must be at least 7 days old by default
+- Optional: set `SOCKET_API_KEY` to use authenticated Socket org settings; otherwise installs run in free mode
 
 ### Drafts
 
 - Keep local drafts in `src/drafts/`
-- `yarn build` blocks unexpected untracked content under `src/`
+- `bun run build` blocks unexpected untracked content under `src/`
 
 ### Provenance
 
@@ -30,5 +42,5 @@ yarn test
 ### Deploy
 
 ```
-yarn deploy
+just deploy
 ```
