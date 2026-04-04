@@ -15,5 +15,8 @@ build:
 test:
   bun run test
 
+spellcheck:
+  bun run spellcheck
+
 deploy:
   bun run deploy
