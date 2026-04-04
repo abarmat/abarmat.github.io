@@ -1,5 +1,5 @@
 import { spawnSync } from "node:child_process";
-import { cpSync, mkdirSync, rmSync } from "node:fs";
+import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -66,4 +66,16 @@ const build = spawnSync("bunx", ["eleventy", ...process.argv.slice(2)], {
 if (build.error) {
   throw build.error;
 }
-process.exit(build.status ?? 0);
+if (build.status !== 0) {
+  process.exit(build.status ?? 1);
+}
+
+// Minify CSS (after Eleventy, which also copies CSS via passthrough)
+const { transform } = await import("lightningcss");
+const cssPath = path.join(distDir, "css", "style.css");
+const { code } = transform({
+  filename: cssPath,
+  code: readFileSync(cssPath),
+  minify: true,
+});
+writeFileSync(cssPath, code);

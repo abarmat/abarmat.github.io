@@ -7,7 +7,17 @@ title: Home | abarmat.com
     <section>
         <div class="bio-id">
             <a href="/">
-                <img class="avatar" src="/assets/images/avatar.jpg" alt="AB" />
+                <img
+                    class="avatar"
+                    src="{{ meta.images.avatar.src }}"
+                    srcset="{{ meta.images.avatar.srcset }}"
+                    sizes="{{ meta.images.avatar.sizes }}"
+                    width="{{ meta.images.avatar.width }}"
+                    height="{{ meta.images.avatar.height }}"
+                    alt="{{ meta.images.avatar.alt }}"
+                    decoding="async"
+                    fetchpriority="high"
+                />
             </a>
             <h1>
                 <a href="/">Ariel Barmat</a>

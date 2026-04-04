@@ -126,11 +126,40 @@ This should stay private.
 
     assert.match(home, /<meta name="description" content="Personal blog and thoughts on technology, AI, and more"/);
     assert.match(home, /<link rel="canonical" href="https:\/\/abarmat\.com\/"/);
+    assert.match(
+      home,
+      /<img class="avatar" src="\/assets\/images\/avatar-90\.jpg(?:\?v=[^"]+)?" srcset="\/assets\/images\/avatar-45\.jpg(?:\?v=[^",]+)?(?: 1x)?, \/assets\/images\/avatar-90\.jpg(?:\?v=[^",]+)? 2x, \/assets\/images\/avatar-135\.jpg(?:\?v=[^",]+)? 3x" sizes="45px" width="45" height="45" alt="AB" decoding="async" fetchpriority="high">/,
+    );
+    assert.match(
+      home,
+      /<link rel="icon" type="image\/png" sizes="32x32" href="\/assets\/images\/favicon-32\.png(?:\?v=[^"]+)?"/,
+    );
     assert.match(home, new RegExp(shortSha));
 
     assert.match(
       post,
       /https:\/\/medium\.com\/@abarmat\/tuned-to-the-mood-of-the-music-/,
+    );
+
+    assert.equal(
+      existsSync(path.join(repoRoot, "dist/assets/images/avatar-45.jpg")),
+      true,
+      "1x avatar should be published",
+    );
+    assert.equal(
+      existsSync(path.join(repoRoot, "dist/assets/images/avatar-90.jpg")),
+      true,
+      "2x avatar should be published",
+    );
+    assert.equal(
+      existsSync(path.join(repoRoot, "dist/assets/images/avatar-135.jpg")),
+      true,
+      "3x avatar should be published",
+    );
+    assert.equal(
+      existsSync(path.join(repoRoot, "dist/assets/images/favicon-32.png")),
+      true,
+      "favicon should be published",
     );
   });
 

@@ -39,6 +39,11 @@ just install
 
 - The built site footer shows the published short commit hash
 
+### Assets
+
+- Avatar image uses committed `1x/2x/3x` variants in `src/assets/images/`
+- Replace those variants when updating `src/assets/images/avatar.jpg` or the favicon
+
 ### Deploy
 
 ```

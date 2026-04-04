@@ -18,5 +18,8 @@ test:
 spellcheck:
   bun run spellcheck
 
+serve:
+  bun run build && bunx serve dist
+
 deploy:
   bun run deploy

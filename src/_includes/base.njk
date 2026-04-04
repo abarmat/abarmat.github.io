@@ -19,13 +19,13 @@
     <link
       rel="apple-touch-icon"
       sizes="300x300"
-      href="/assets/images/avatar.jpg"
+      href="{{ meta.images.appleTouchIcon }}"
     />
     <link
       rel="icon"
       type="image/png"
-      sizes="300x300"
-      href="/assets/images/avatar.jpg"
+      sizes="32x32"
+      href="{{ meta.images.favicon }}"
     />
     <link
       rel="alternate"
@@ -51,7 +51,7 @@
       {% if meta.buildCommitSha %}
         | {{ meta.buildCommitSha }}
       {% endif %}
-      <small>
+      </small>
     </footer>
   </body>
 </html>
