@@ -1,5 +1,5 @@
 import { spawnSync } from "node:child_process";
-import { cpSync, mkdirSync, rmSync } from "node:fs";
+import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -65,5 +65,18 @@ const build = spawnSync("bunx", ["eleventy", ...process.argv.slice(2)], {
 if (build.error) {
   throw build.error;
 }
+if (build.status !== 0) {
+  process.exit(build.status ?? 1);
+}
 
-process.exit(build.status ?? 0);
+// Minify CSS (after Eleventy, which also copies CSS via passthrough)
+const CleanCSS = (await import("clean-css")).default;
+const cssPath = path.join(distDir, "css", "style.css");
+const cssInput = readFileSync(cssPath, "utf8");
+const cssOutput = new CleanCSS().minify(cssInput);
+if (cssOutput.errors.length > 0) {
+  process.stderr.write("CSS minification errors:\n");
+  for (const err of cssOutput.errors) process.stderr.write(`  ${err}\n`);
+  process.exit(1);
+}
+writeFileSync(cssPath, cssOutput.styles);
