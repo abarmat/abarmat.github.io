@@ -49,8 +49,9 @@ if (unexpectedFiles.length > 0) {
 rmSync(distDir, { recursive: true, force: true });
 mkdirSync(distDir, { recursive: true });
 
-cpSync(path.join(repoRoot, "src", "css"), path.join(distDir, "css"), { recursive: true });
-cpSync(path.join(repoRoot, "src", "assets"), path.join(distDir, "assets"), { recursive: true });
+const skipJunk = (src) => !path.basename(src).startsWith(".DS_Store");
+cpSync(path.join(repoRoot, "src", "css"), path.join(distDir, "css"), { recursive: true, filter: skipJunk });
+cpSync(path.join(repoRoot, "src", "assets"), path.join(distDir, "assets"), { recursive: true, filter: skipJunk });
 cpSync(path.join(repoRoot, "CNAME"), path.join(distDir, "CNAME"));
 
 const build = spawnSync("bunx", ["eleventy", ...process.argv.slice(2)], {
