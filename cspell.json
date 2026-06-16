@@ -1,8 +1,17 @@
 {
   "version": "0.2",
   "language": "en",
-  "files": ["src/**/*.md", "src/**/*.njk"],
-  "ignorePaths": ["node_modules", "dist", "bun.lock"],
+  "files": [
+    "src/**/*.md",
+    "src/**/*.njk"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "bun.lock",
+    "src/assets/SPEC-media-stack.md",
+    "src/drafts/*"
+  ],
   "words": [
     "abarmat",
     "Ariel",
