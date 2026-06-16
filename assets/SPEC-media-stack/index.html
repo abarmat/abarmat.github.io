@@ -1,0 +1,219 @@
+<h1>Standalone Home Media Stack Guide</h1><p>This guide is for building a Docker-based home media stack from scratch. You do not need another source repo. Follow it in order and copy the file contents into your own project.</p><p>The stack runs:</p><ul><li>SABnzbd for downloads.</li><li>Prowlarr for indexers.</li><li>Sonarr for TV automation.</li><li>Radarr for movie automation.</li><li>Jellyfin for playback.</li></ul><p>The design stores large media files on a NAS and stores app configuration on the local server disk. That keeps the apps responsive while keeping media on shared storage.</p><h2>Before You Start</h2><p>You need:</p><ul><li>A Linux server.</li><li>Docker Engine and Docker Compose v2.</li><li>The <code>just</code> command runner.</li><li>A NAS share mounted on the Linux server.</li><li>A Usenet provider account for SABnzbd.</li><li>Indexer API keys for Prowlarr.</li></ul><p>Install Docker and Compose using the official Docker docs for your Linux distribution. Install <code>just</code> using your package manager or the official <code>just</code> manual.</p><p>Do not put passwords, API keys, private domains, private IP addresses, usernames, downloaded files, media files, or app databases in git.</p><h2>Folder Plan</h2><p>Create one project folder on the Linux server:</p><pre><code class="language-sh">mkdir -p ~/media-stack
+cd ~/media-stack
+</code></pre><p>The guide assumes these files will exist:</p><pre><code class="language-text">media-stack/.env
+media-stack/.env.example
+media-stack/.gitignore
+media-stack/docker-compose.yml
+media-stack/justfile
+</code></pre><h2>Pick Your Paths</h2><p>Choose three paths:</p><table><thead><tr><th>Name</th><th>Purpose</th><th>Example</th></tr></thead><tbody><tr><td><code>BASE_PATH</code></td><td>NAS folder for downloads, media, and backups</td><td><code>/mnt/media</code></td></tr><tr><td><code>APPDATA_BASE</code></td><td>Local app config/databases</td><td><code>./appdata</code></td></tr><tr><td><code>CACHE_BASE</code></td><td>Local Jellyfin cache/transcodes</td><td><code>.</code></td></tr></tbody></table><p><code>BASE_PATH</code> must be a NAS mount. <code>APPDATA_BASE</code> and <code>CACHE_BASE</code> should be on local disk.</p><p>Check your user and group IDs:</p><pre><code class="language-sh">id -u
+id -g
+</code></pre><p>If you want Jellyfin GPU transcoding, also check:</p><pre><code class="language-sh">ls -la /dev/dri
+getent group render | cut -d: -f3
+getent group video | cut -d: -f3
+</code></pre><p>If <code>/dev/dri</code> does not exist, skip GPU transcoding for now.</p><h2>Create <code>.gitignore</code></h2><p>Create <code>.gitignore</code>:</p><pre><code class="language-gitignore">.env
+.env.local
+appdata/
+downloads/
+media/
+jellyfin-cache/
+backups/
+</code></pre><h2>Create <code>.env.example</code></h2><p>Create <code>.env.example</code>:</p><pre><code class="language-dotenv">BASE_PATH=/mnt/media
+PUID=1000
+PGID=1000
+TZ=America/New_York
+RENDER_GID=1000
+VIDEO_GID=44
+APPDATA_BASE=./appdata
+CACHE_BASE=.
+</code></pre><p>Copy it to <code>.env</code>:</p><pre><code class="language-sh">cp .env.example .env
+</code></pre><p>Edit <code>.env</code> and replace values for your server:</p><ul><li><code>BASE_PATH</code>: your NAS mount path.</li><li><code>PUID</code>: output of <code>id -u</code>.</li><li><code>PGID</code>: output of <code>id -g</code>.</li><li><code>TZ</code>: your IANA timezone.</li><li><code>RENDER_GID</code>: output of the <code>render</code> group command, if using GPU.</li><li><code>VIDEO_GID</code>: output of the <code>video</code> group command, if using GPU.</li><li><code>APPDATA_BASE</code>: local app config path.</li><li><code>CACHE_BASE</code>: local cache root.</li></ul><p>No GPU? Keep the variables for now, but remove the <code>devices</code> and <code>group_add</code> sections from Jellyfin in <code>docker-compose.yml</code> before starting.</p><h2>Create <code>docker-compose.yml</code></h2><p>Create <code>docker-compose.yml</code>:</p><pre><code class="language-yaml">services:
+  sabnzbd:
+    image: lscr.io/linuxserver/sabnzbd:latest
+    container_name: sabnzbd
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ${BASE_PATH}:/data
+      - ${APPDATA_BASE:-./appdata}/sabnzbd:/config
+    ports:
+      - &quot;8080:8080&quot;
+    restart: unless-stopped
+    healthcheck:
+      test: [&quot;CMD&quot;, &quot;curl&quot;, &quot;-f&quot;, &quot;http://localhost:8080/api?mode=version&quot;]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ${APPDATA_BASE:-./appdata}/prowlarr:/config
+    ports:
+      - &quot;9696:9696&quot;
+    restart: unless-stopped
+    healthcheck:
+      test: [&quot;CMD&quot;, &quot;curl&quot;, &quot;-f&quot;, &quot;http://localhost:9696/ping&quot;]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ${BASE_PATH}:/data
+      - ${APPDATA_BASE:-./appdata}/sonarr:/config
+    ports:
+      - &quot;8989:8989&quot;
+    restart: unless-stopped
+    depends_on:
+      sabnzbd:
+        condition: service_healthy
+      prowlarr:
+        condition: service_healthy
+    healthcheck:
+      test: [&quot;CMD&quot;, &quot;curl&quot;, &quot;-f&quot;, &quot;http://localhost:8989/ping&quot;]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ${BASE_PATH}:/data
+      - ${APPDATA_BASE:-./appdata}/radarr:/config
+    ports:
+      - &quot;7878:7878&quot;
+    restart: unless-stopped
+    depends_on:
+      sabnzbd:
+        condition: service_healthy
+      prowlarr:
+        condition: service_healthy
+    healthcheck:
+      test: [&quot;CMD&quot;, &quot;curl&quot;, &quot;-f&quot;, &quot;http://localhost:7878/ping&quot;]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - TZ=${TZ}
+    devices:
+      - /dev/dri:/dev/dri
+    group_add:
+      - &quot;${RENDER_GID}&quot;
+      - &quot;${VIDEO_GID}&quot;
+    volumes:
+      - ${BASE_PATH}/media:/media
+      - ${APPDATA_BASE:-./appdata}/jellyfin:/config
+      - ${CACHE_BASE}/jellyfin-cache:/cache
+    ports:
+      - &quot;8096:8096&quot;
+    restart: unless-stopped
+    healthcheck:
+      test: [&quot;CMD&quot;, &quot;curl&quot;, &quot;-f&quot;, &quot;http://localhost:8096/health&quot;]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+</code></pre><h2>Create <code>justfile</code></h2><p>Create <code>justfile</code>:</p><pre><code class="language-just">set dotenv-load
+
+default:
+  @just --list
+
+check-env:
+  @test -f .env || (echo &quot;Missing .env. Run: cp .env.example .env&quot; &gt;&amp;2; exit 1)
+  @test -n &quot;${BASE_PATH:-}&quot; || (echo &quot;BASE_PATH is not set&quot; &gt;&amp;2; exit 1)
+  @test -n &quot;${PUID:-}&quot; || (echo &quot;PUID is not set&quot; &gt;&amp;2; exit 1)
+  @test -n &quot;${PGID:-}&quot; || (echo &quot;PGID is not set&quot; &gt;&amp;2; exit 1)
+  @test -n &quot;${TZ:-}&quot; || (echo &quot;TZ is not set&quot; &gt;&amp;2; exit 1)
+  @test -n &quot;${APPDATA_BASE:-}&quot; || (echo &quot;APPDATA_BASE is not set&quot; &gt;&amp;2; exit 1)
+  @test -n &quot;${CACHE_BASE:-}&quot; || (echo &quot;CACHE_BASE is not set&quot; &gt;&amp;2; exit 1)
+
+setup: check-env
+  @mkdir -p &quot;${BASE_PATH}/downloads/incomplete&quot;
+  @mkdir -p &quot;${BASE_PATH}/downloads/complete/tv&quot;
+  @mkdir -p &quot;${BASE_PATH}/downloads/complete/movies&quot;
+  @mkdir -p &quot;${BASE_PATH}/media/tv&quot;
+  @mkdir -p &quot;${BASE_PATH}/media/movies&quot;
+  @mkdir -p &quot;${BASE_PATH}/backups/app-config&quot;
+  @mkdir -p &quot;${APPDATA_BASE}/sabnzbd&quot;
+  @mkdir -p &quot;${APPDATA_BASE}/prowlarr&quot;
+  @mkdir -p &quot;${APPDATA_BASE}/sonarr&quot;
+  @mkdir -p &quot;${APPDATA_BASE}/radarr&quot;
+  @mkdir -p &quot;${APPDATA_BASE}/jellyfin&quot;
+  @mkdir -p &quot;${CACHE_BASE}/jellyfin-cache&quot;
+  @echo &quot;Created required folders&quot;
+
+up: check-env
+  @docker compose up -d
+
+down:
+  @docker compose down
+
+restart: down up
+
+ps:
+  @docker compose ps
+
+logs:
+  @docker compose logs -f
+</code></pre><h2>Mount The NAS</h2><p>The NAS must be mounted before containers start. An NFS mount usually has this shape in <code>/etc/fstab</code>:</p><pre><code class="language-fstab">&lt;nas-host-or-ip&gt;:&lt;nas-export-path&gt; &lt;nas-mount-point&gt; nfs defaults,_netdev,nofail,x-systemd.automount,x-systemd.mount-timeout=30 0 0
+</code></pre><p>Ask for help here if needed. This part depends on your NAS. After editing <code>/etc/fstab</code>, test:</p><pre><code class="language-sh">sudo mount -a
+mountpoint &lt;nas-mount-point&gt;
+</code></pre><p>The second command should say the path is a mount point. If it does not, fix the NAS mount before starting Docker.</p><h2>Start The Stack</h2><p>Run:</p><pre><code class="language-sh">just check-env
+just setup
+just up
+just ps
+</code></pre><p>Wait a few minutes. <code>just ps</code> should show all five containers running. Some may take a little while to become healthy on first boot.</p><p>Open the apps in a browser at ports <code>8080</code>, <code>9696</code>, <code>8989</code>, <code>7878</code>, and <code>8096</code> on your server.</p><h2>Configure The Apps</h2><p>Configure in this order.</p><h3>1. SABnzbd</h3><p>Open <code>http://&lt;server-ip-or-name&gt;:8080</code>.</p><p>Add your Usenet provider details in the web UI. Do not write them into files in this project.</p><p>Set folders:</p><pre><code class="language-text">Incomplete: /data/downloads/incomplete
+Complete:   /data/downloads/complete
+</code></pre><p>Set categories:</p><pre><code class="language-text">tv     -&gt; /data/downloads/complete/tv
+movies -&gt; /data/downloads/complete/movies
+</code></pre><h3>2. Prowlarr</h3><p>Open <code>http://&lt;server-ip-or-name&gt;:9696</code>.</p><p>Add your indexers using their API keys. Do not commit API keys.</p><p>Add Sonarr:</p><pre><code class="language-text">URL: http://sonarr:8989
+</code></pre><p>Add Radarr:</p><pre><code class="language-text">URL: http://radarr:7878
+</code></pre><p>The URLs above are Docker service names. They are different from the browser URLs.</p><h3>3. Sonarr</h3><p>Open <code>http://&lt;server-ip-or-name&gt;:8989</code>.</p><p>Set:</p><pre><code class="language-text">Root folder: /data/media/tv
+Download client: SABnzbd
+SABnzbd host: sabnzbd
+SABnzbd port: 8080
+SABnzbd category: tv
+</code></pre><h3>4. Radarr</h3><p>Open <code>http://&lt;server-ip-or-name&gt;:7878</code>.</p><p>Set:</p><pre><code class="language-text">Root folder: /data/media/movies
+Download client: SABnzbd
+SABnzbd host: sabnzbd
+SABnzbd port: 8080
+SABnzbd category: movies
+</code></pre><h3>5. Jellyfin</h3><p>Open <code>http://&lt;server-ip-or-name&gt;:8096</code>.</p><p>Add libraries:</p><pre><code class="language-text">TV:     /media/tv
+Movies: /media/movies
+</code></pre><p>For GPU transcoding, go to Jellyfin's playback/transcoding settings and enable VA-API or the acceleration method supported by your hardware. Use <code>/dev/dri/renderD128</code> when VA-API asks for a render device.</p><h2>Backups</h2><p>At minimum, back up the local <code>appdata/</code> folder. That folder contains the app databases and settings.</p><p>Simple manual backup:</p><pre><code class="language-sh">mkdir -p &quot;${BASE_PATH}/backups/app-config&quot;
+rsync -a --delete &quot;${APPDATA_BASE}/&quot; &quot;${BASE_PATH}/backups/app-config/latest/&quot;
+</code></pre><p>Restore from that backup:</p><pre><code class="language-sh">just down
+rsync -a --delete &quot;${BASE_PATH}/backups/app-config/latest/&quot; &quot;${APPDATA_BASE}/&quot;
+just up
+</code></pre><h2>Common Problems</h2><p>If Sonarr or Radarr cannot import a download, check the SABnzbd category path. It should start with <code>/data/downloads/complete</code>.</p><p>If Jellyfin sees no media, check that files are under:</p><pre><code class="language-text">${BASE_PATH}/media/tv
+${BASE_PATH}/media/movies
+</code></pre><p>If the stack starts before the NAS is mounted, stop the stack, mount the NAS, and start again:</p><pre><code class="language-sh">just down
+sudo mount -a
+just up
+</code></pre><p>If Docker says it cannot use <code>/dev/dri</code>, remove the Jellyfin <code>devices</code> and <code>group_add</code> sections and start without GPU transcoding.</p><h2>Final Checklist</h2><p>You are done when:</p><ul><li><code>just check-env</code> passes.</li><li><code>just setup</code> creates folders.</li><li>The NAS path is mounted.</li><li><code>just up</code> starts all five containers.</li><li><code>just ps</code> shows the containers running.</li><li>SABnzbd downloads to <code>/data/downloads</code>.</li><li>Sonarr uses <code>/data/media/tv</code>.</li><li>Radarr uses <code>/data/media/movies</code>.</li><li>Jellyfin uses <code>/media/tv</code> and <code>/media/movies</code>.</li><li>No credentials or API keys are committed.</li></ul>

@@ -10,12 +10,21 @@
   />
   <id>https://abarmat.com/</id>
   <updated
-    >2018-12-16T00:00:00Z</updated
+    >2026-06-16T00:00:00Z</updated
   >
   <author>
     <name>Ariel Barmat</name>
     <email>hey@abarmat.com</email>
   </author>
+  
+  <entry>
+    <title>Own the replicator</title>
+    <link href="https://abarmat.com/own-the-replicator/" rel="alternate" type="text/html" />
+    <id>https://abarmat.com/own-the-replicator/</id>
+    <updated>2026-06-16T00:00:00Z</updated>
+    <summary>Own the replicator</summary>
+    <content type="html">&lt;p&gt;I recently set up an entire media stack at home. It&#39;s all running on a small server connected to a NAS. One day, we had some friends visiting and we watched a documentary together. They were surprised by what I had built. Honestly, since I&#39;m a technical person paired with AI it wasn&#39;t that hard.&lt;/p&gt;&lt;p&gt;A few days after, my friend reached out asking for some guidance to build something similar. I only had a docker compose file, too technical for most people. Then I remembered reading about this trend of sharing specs instead of code. So I got an LLM to describe step by step how to replicate the media stack keeping technical details to a minimum. I ended up with a single &lt;a href=&quot;https://abarmat.com/assets/SPEC-media-stack.md&quot;&gt;SPEC.md&lt;/a&gt; markdown file. The perfect package he could use to clone my system!&lt;/p&gt;&lt;p&gt;I soon realized that my friend wasn&#39;t impressed by the technical feat, it was about watching me owning my system. Like, &amp;quot;can you really have that at home?&amp;quot;&lt;/p&gt;&lt;p&gt;It makes sense. The last decade was dominated by the streaming mindset. Be light. Nomad. Do not own anything since whatever you want you can get &amp;quot;just in time&amp;quot;. However, there is something attractive in the feeling of ownership. We kind of lost that during the last few decades. I&#39;m old enough to remember how precious it was to get that CD with the music you liked. As a teenager with no money, I couldn&#39;t buy everything I wanted, and bytes were not cheap at the time. I used to exchange music for homework, there was some effort involved in getting those things. They were precious.&lt;/p&gt;&lt;p&gt;Since 2000 we accelerated into digitizing, storing and shipping every bit of our lives through the &lt;a href=&quot;https://grokipedia.com/page/Information_superhighway&quot;&gt;information super highway&lt;/a&gt;. We, consumers, became used to &amp;quot;being served&amp;quot; content. We now went one step further. We are close to generating anything we want, when we need it, in realtime, locally, even without transmission. With GPTs we created the digital &lt;a href=&quot;https://grokipedia.com/page/Replicator_(Star_Trek)&quot;&gt;replicator&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Maybe this trend will reverse in a post-abundance world, who knows; or we might just be happy with owning our own replicator.&lt;/p&gt;&lt;p&gt;I believe we might have the best of both worlds! The feeling of ownership comes not only from property but also from being a builder. By owning our own personal replicator we reclaim the tangible satisfaction of the CD era. Because these local systems allow us to generate what we need instantly, the experience keeps some of the lightness of streaming. We get the satisfaction of ownership without losing the magic of immediate access.&lt;/p&gt;</content>
+  </entry>
   
   <entry>
     <title>Tuned to the mood of the music</title>
