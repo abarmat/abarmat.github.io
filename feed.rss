@@ -13,7 +13,8 @@
     <item>
       <title>Own the replicator</title>
       <description>Own the replicator</description>
-      <content:encoded><![CDATA[<p>I recently set up an entire media stack at home. It's all running on a small server connected to a NAS.
+      <content:encoded><![CDATA[<p><img src="/assets/images/own-the-replicator.jpg" alt="Replicating!"></p>
+<p>I recently set up an entire media stack at home. It's all running on a small server connected to a NAS.
 One day, we had some friends visiting and we watched a documentary together. They were surprised by what I had built. Honestly, since I'm a technical person paired with AI it wasn't that hard.</p>
 <p>A few days after, my friend reached out asking for some guidance to build something similar. I only had a docker compose file, too technical for most people. Then I remembered reading about this trend of sharing specs instead of code. So I got an LLM to describe step by step how to replicate the media stack keeping technical details to a minimum. I ended up with a single <a href="/assets/SPEC-media-stack.md">SPEC.md</a> markdown file. The perfect package he could use to clone my system!</p>
 <p>I soon realized that my friend wasn't impressed by the technical feat, it was about watching me owning my system. Like, &quot;can you really have that at home?&quot;</p>
