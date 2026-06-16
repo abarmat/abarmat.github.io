@@ -15,6 +15,12 @@ module.exports = {
     },
     appleTouchIcon: "/assets/images/avatar.jpg",
     favicon: "/assets/images/favicon-32.png",
+    socialDefault: {
+      src: "/assets/images/social/default.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Ariel Barmat's personal site",
+    },
   },
   author: {
     name: "Ariel Barmat",

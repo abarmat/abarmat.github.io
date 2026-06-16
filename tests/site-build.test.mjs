@@ -4,6 +4,7 @@ import { spawnSync } from "node:child_process";
 import {
   existsSync,
   mkdirSync,
+  rmdirSync,
   readFileSync,
   rmSync,
   writeFileSync,
@@ -84,7 +85,13 @@ This should stay private.
       );
     } finally {
       rmSync(draftPath, { force: true });
-      rmSync(path.dirname(draftPath), { recursive: true, force: true });
+      try {
+        rmdirSync(path.dirname(draftPath));
+      } catch (error) {
+        if (error.code !== "ENOENT" && error.code !== "ENOTEMPTY") {
+          throw error;
+        }
+      }
     }
   });
 
@@ -111,6 +118,10 @@ This should stay private.
     const home = readFileSync(path.join(repoRoot, "dist/index.html"), "utf8");
     const post = readFileSync(
       path.join(repoRoot, "dist/tuned-to-the-mood-of-the-music/index.html"),
+      "utf8",
+    );
+    const ownTheReplicator = readFileSync(
+      path.join(repoRoot, "dist/own-the-replicator/index.html"),
       "utf8",
     );
     const shortSha = getHeadShortSha();
@@ -141,6 +152,22 @@ This should stay private.
       /https:\/\/medium\.com\/@abarmat\/tuned-to-the-mood-of-the-music-/,
     );
 
+    assert.match(
+      ownTheReplicator,
+      /<meta property="og:image" content="https:\/\/abarmat\.com\/assets\/images\/social\/own-the-replicator\.jpg(?:\?v=[^"]+)?">/,
+    );
+    assert.match(ownTheReplicator, /<meta property="og:image:width" content="1200">/);
+    assert.match(ownTheReplicator, /<meta property="og:image:height" content="630">/);
+    assert.match(
+      ownTheReplicator,
+      /<meta property="og:image:alt" content="A local media stack running at home">/,
+    );
+    assert.match(ownTheReplicator, /<meta name="twitter:card" content="summary_large_image">/);
+    assert.match(
+      ownTheReplicator,
+      /<meta name="twitter:image" content="https:\/\/abarmat\.com\/assets\/images\/social\/own-the-replicator\.jpg(?:\?v=[^"]+)?">/,
+    );
+
     assert.equal(
       existsSync(path.join(repoRoot, "dist/assets/images/avatar-45.jpg")),
       true,
@@ -160,6 +187,21 @@ This should stay private.
       existsSync(path.join(repoRoot, "dist/assets/images/favicon-32.png")),
       true,
       "favicon should be published",
+    );
+    assert.equal(
+      existsSync(path.join(repoRoot, "dist/assets/images/social/default.jpg")),
+      true,
+      "default social card image should be published",
+    );
+    assert.equal(
+      existsSync(path.join(repoRoot, "dist/assets/images/social/own-the-replicator.jpg")),
+      true,
+      "post social card image should be published",
+    );
+    assert.equal(
+      existsSync(path.join(repoRoot, "dist/assets/SPEC-media-stack/index.html")),
+      false,
+      "raw asset markdown should not render as a site page",
     );
   });
 
