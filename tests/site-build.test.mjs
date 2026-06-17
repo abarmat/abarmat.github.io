@@ -160,9 +160,26 @@ This should stay private.
     assert.match(ownTheReplicator, /<meta property="og:image:height" content="630">/);
     assert.match(
       ownTheReplicator,
-      /<meta property="og:image:alt" content="A local media stack running at home">/,
+      /<meta property="og:image:alt" content="Own the replicator">/,
+    );
+    assert.match(
+      ownTheReplicator,
+      /<meta name="description" content="I recently set up an entire media stack at home\. It(?:'|&#39;)s all running on a small server connected to a NAS\./,
+    );
+    assert.match(
+      ownTheReplicator,
+      /<meta property="og:description" content="I recently set up an entire media stack at home\. It(?:'|&#39;)s all running on a small server connected to a NAS\./,
     );
     assert.match(ownTheReplicator, /<meta name="twitter:card" content="summary_large_image">/);
+    assert.match(
+      ownTheReplicator,
+      /<meta name="twitter:description" content="I recently set up an entire media stack at home\. It(?:'|&#39;)s all running on a small server connected to a NAS\./,
+    );
+    assert.doesNotMatch(ownTheReplicator, /<meta name="description" content="Replicating!/);
+    assert.doesNotMatch(
+      ownTheReplicator,
+      /<meta name="description" content="Personal blog and thoughts on technology, AI, and more"/,
+    );
     assert.match(
       ownTheReplicator,
       /<meta name="twitter:image" content="https:\/\/abarmat\.com\/assets\/images\/social\/own-the-replicator\.jpg(?:\?v=[^"]+)?">/,

@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     {% set pageTitle = title or meta.title %}
-    {% set pageDescription = description or meta.description %}
+    {% set inferredDescription = "" %}
+    {% if tags and "post" in tags %}
+      {% set inferredDescription = content | descriptionFromHtml %}
+    {% endif %}
+    {% set pageDescription = description or inferredDescription or meta.description %}
     {% set canonicalUrl = page.url | htmlBaseUrl(meta.base) %}
     {% set pageImage = socialImage or meta.images.socialDefault.src %}
     {% set pageImageUrl = pageImage | htmlBaseUrl(meta.base) %}

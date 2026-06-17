@@ -9,7 +9,9 @@ permalink: "/{{ title | slugify }}/"
     <section>
         <h1>{{ title }}</h1>
         <div class="publish-date">{{ date | dateFilter }}</div>
+        <!-- post-body-start -->
         {{ content | safe }}
+        <!-- post-body-end -->
     </section>
     <sub>
         Originally published <a href="{{ path }}">{{ date | dateFilter }}</a>
