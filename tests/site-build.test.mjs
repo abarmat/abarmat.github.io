@@ -142,11 +142,11 @@ This should stay private.
     assert.match(home, /<link rel="canonical" href="https:\/\/abarmat\.com\/"/);
     assert.match(
       home,
-      /<img class="avatar" src="\/assets\/images\/avatar-90\.jpg(?:\?v=[^"]+)?" srcset="\/assets\/images\/avatar-45\.jpg(?:\?v=[^",]+)?(?: 1x)?, \/assets\/images\/avatar-90\.jpg(?:\?v=[^",]+)? 2x, \/assets\/images\/avatar-135\.jpg(?:\?v=[^",]+)? 3x" sizes="45px" width="45" height="45" alt="AB" decoding="async" fetchpriority="high">/,
+      /<img class="avatar" src="\/assets\/images\/avatar-90\.jpg" srcset="\/assets\/images\/avatar-45\.jpg(?: 1x)?, \/assets\/images\/avatar-90\.jpg 2x, \/assets\/images\/avatar-135\.jpg 3x" sizes="45px" width="45" height="45" alt="AB" decoding="async" fetchpriority="high">/,
     );
     assert.match(
       home,
-      /<link rel="icon" type="image\/png" sizes="32x32" href="\/assets\/images\/favicon-32\.png(?:\?v=[^"]+)?"/,
+      /<link rel="icon" type="image\/png" sizes="32x32" href="\/assets\/images\/favicon-32\.png"/,
     );
     assert.match(home, new RegExp(shortSha));
 
