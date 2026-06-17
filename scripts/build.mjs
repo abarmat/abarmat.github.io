@@ -1,5 +1,6 @@
+import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
-import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -53,6 +54,32 @@ const skipJunk = (src) => !path.basename(src).startsWith(".DS_Store");
 cpSync(path.join(repoRoot, "src", "css"), path.join(distDir, "css"), { recursive: true, filter: skipJunk });
 cpSync(path.join(repoRoot, "src", "assets"), path.join(distDir, "assets"), { recursive: true, filter: skipJunk });
 cpSync(path.join(repoRoot, "CNAME"), path.join(distDir, "CNAME"));
+
+function copyHashedSocialImages() {
+  const sourceDir = path.join(repoRoot, "src", "assets", "images", "social");
+  const targetDir = path.join(distDir, "assets", "images", "social");
+
+  if (!existsSync(sourceDir)) {
+    return;
+  }
+
+  mkdirSync(targetDir, { recursive: true });
+
+  for (const entry of readdirSync(sourceDir, { withFileTypes: true })) {
+    if (!entry.isFile() || !/\.(jpe?g|png|webp)$/i.test(entry.name)) {
+      continue;
+    }
+
+    const sourcePath = path.join(sourceDir, entry.name);
+    const hash = createHash("sha256").update(readFileSync(sourcePath)).digest("hex").slice(0, 8);
+    const parsed = path.parse(entry.name);
+    const targetPath = path.join(targetDir, `${parsed.name}.${hash}${parsed.ext}`);
+
+    cpSync(sourcePath, targetPath);
+  }
+}
+
+copyHashedSocialImages();
 
 const build = spawnSync("bunx", ["eleventy", ...process.argv.slice(2)], {
   cwd: repoRoot,

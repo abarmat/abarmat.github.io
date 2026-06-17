@@ -45,6 +45,7 @@ just install
 - Replace those variants when updating `src/assets/images/avatar.jpg` or the favicon
 - Social card images live in `src/assets/images/social/` and should be `1200x630`
 - Use post frontmatter fields `description`, `socialImage`, and `socialImageAlt` for X/Twitter cards
+- Social card metadata points at build-time hashed image filenames in `dist`
 - Posts without `description` use a truncated body excerpt that skips image tags
 
 ### Deploy

@@ -1,6 +1,23 @@
+const { createHash } = require("node:crypto");
+const { readFileSync } = require("node:fs");
+const path = require("node:path");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const cacheBuster = require("@mightyplow/eleventy-plugin-cache-buster");
+
+function hashedAssetPath(assetPath) {
+  const cleanPath = String(assetPath).split("?")[0];
+
+  if (/^https?:\/\//i.test(cleanPath)) {
+    return cleanPath;
+  }
+
+  const sourcePath = path.join(__dirname, "src", cleanPath.replace(/^\//, ""));
+  const hash = createHash("sha256").update(readFileSync(sourcePath)).digest("hex").slice(0, 8);
+  const parsed = path.posix.parse(cleanPath);
+
+  return path.posix.join(parsed.dir, `${parsed.name}.${hash}${parsed.ext}`);
+}
 
 module.exports = function (eleventyConfig) {
   // Add cache buster plugin
@@ -51,6 +68,8 @@ module.exports = function (eleventyConfig) {
 
     return (wordBoundary > 80 ? excerpt.slice(0, wordBoundary) : text.slice(0, maxLength)).trim();
   });
+
+  eleventyConfig.addFilter("hashedAssetPath", hashedAssetPath);
 
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {

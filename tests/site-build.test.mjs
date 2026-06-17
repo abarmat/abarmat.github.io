@@ -124,6 +124,9 @@ This should stay private.
       path.join(repoRoot, "dist/own-the-replicator/index.html"),
       "utf8",
     );
+    const socialImageMatch = ownTheReplicator.match(
+      /https:\/\/abarmat\.com\/assets\/images\/social\/own-the-replicator\.([a-f0-9]{8})\.jpg/,
+    );
     const shortSha = getHeadShortSha();
 
     assert.match(rss, /<lastBuildDate>[A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4}/);
@@ -154,7 +157,7 @@ This should stay private.
 
     assert.match(
       ownTheReplicator,
-      /<meta property="og:image" content="https:\/\/abarmat\.com\/assets\/images\/social\/own-the-replicator\.jpg(?:\?v=[^"]+)?">/,
+      /<meta property="og:image" content="https:\/\/abarmat\.com\/assets\/images\/social\/own-the-replicator\.[a-f0-9]{8}\.jpg">/,
     );
     assert.match(ownTheReplicator, /<meta property="og:image:width" content="1200">/);
     assert.match(ownTheReplicator, /<meta property="og:image:height" content="630">/);
@@ -182,8 +185,9 @@ This should stay private.
     );
     assert.match(
       ownTheReplicator,
-      /<meta name="twitter:image" content="https:\/\/abarmat\.com\/assets\/images\/social\/own-the-replicator\.jpg(?:\?v=[^"]+)?">/,
+      /<meta name="twitter:image" content="https:\/\/abarmat\.com\/assets\/images\/social\/own-the-replicator\.[a-f0-9]{8}\.jpg">/,
     );
+    assert.ok(socialImageMatch, "social card image should include a content hash in the filename");
 
     assert.equal(
       existsSync(path.join(repoRoot, "dist/assets/images/avatar-45.jpg")),
@@ -214,6 +218,16 @@ This should stay private.
       existsSync(path.join(repoRoot, "dist/assets/images/social/own-the-replicator.jpg")),
       true,
       "post social card image should be published",
+    );
+    assert.equal(
+      existsSync(
+        path.join(
+          repoRoot,
+          `dist/assets/images/social/own-the-replicator.${socialImageMatch?.[1]}.jpg`,
+        ),
+      ),
+      true,
+      "hashed post social card image should be published",
     );
     assert.equal(
       existsSync(path.join(repoRoot, "dist/assets/SPEC-media-stack/index.html")),

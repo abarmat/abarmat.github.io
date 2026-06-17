@@ -9,7 +9,7 @@
     {% set pageDescription = description or inferredDescription or meta.description %}
     {% set canonicalUrl = page.url | htmlBaseUrl(meta.base) %}
     {% set pageImage = socialImage or meta.images.socialDefault.src %}
-    {% set pageImageUrl = pageImage | htmlBaseUrl(meta.base) %}
+    {% set pageImageUrl = (pageImage | hashedAssetPath) | htmlBaseUrl(meta.base) %}
     {% set pageImageAlt = socialImageAlt or meta.images.socialDefault.alt %}
     {% set pageImageWidth = socialImageWidth or meta.images.socialDefault.width %}
     {% set pageImageHeight = socialImageHeight or meta.images.socialDefault.height %}
