@@ -38,7 +38,7 @@ template {
 
 a {
     font-style: normal;
-    color: hsla(100, 100%, 100%, 0.8);
+    color: hsla(100, 100%, 100%, 0.85);
     -webkit-text-decoration-skip: objects;
 }
 
@@ -231,7 +231,7 @@ html {
 }
 
 body {
-    color: hsla(100, 100%, 100%, 0.8);
+    color: hsla(100, 100%, 100%, 0.85);
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -419,8 +419,8 @@ p {
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
-    font-size: 1.1rem;
-    line-height: 1.5;
+    font-size: 1.15rem;
+    line-height: 1.6;
 }
 
 figure {
