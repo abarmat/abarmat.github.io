@@ -104,5 +104,7 @@ const { code } = transform({
   filename: cssPath,
   code: readFileSync(cssPath),
   minify: true,
+  // Downlevel native CSS nesting so older browsers don't drop those rules.
+  targets: { chrome: 100 << 16, firefox: 100 << 16, safari: (15 << 16) | (4 << 8) },
 });
 writeFileSync(cssPath, code);

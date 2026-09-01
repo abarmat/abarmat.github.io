@@ -13,7 +13,9 @@ permalink: "/{{ title | slugify }}/"
         {{ content | safe }}
         <!-- post-body-end -->
     </section>
-    <sub>
+    {% if path %}
+    <p class="post-origin">
         Originally published <a href="{{ path }}">{{ date | dateFilter }}</a>
-    </sub>
+    </p>
+    {% endif %}
 </div>
