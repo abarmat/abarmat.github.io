@@ -7,8 +7,26 @@
     <atom:link href="https://abarmat.com/feed.rss" rel="self" type="application/rss+xml"/>
     <language>en</language>
     
-    <lastBuildDate>Tue, 25 Aug 2026 21:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 21:00:00 GMT</lastBuildDate>
     
+    
+    <item>
+      <title>Computerized god</title>
+      <description>Computerized god</description>
+      <content:encoded><![CDATA[<p>I've been a <em>Star Trek</em> fan since I was a kid. I watched almost every episode made before <em>Voyager</em>, and I'm now catching up on the newer series I missed.</p>
+<p>While watching <em>Star Trek: Strange New Worlds</em>, I noticed that the crew uses computers much as we do today. The tech is more powerful, but humans still give instructions, and computers follow them.</p>
+<p>The series takes place hundreds of years in the future! Given how quickly AI is advancing, this version of the future already seems ridiculous.</p>
+<p>Almost every possible future has been written in science fiction, but sometimes I wonder if we were creative enough to see where we are going.</p>
+<p>In most futures, we are still in control of AI. We use it to manage complex systems such as a spaceship. It also allows us to search for information in a conversational way. That's the kind of future you see in Star Trek, Star Wars, or Alien.</p>
+<p>In other futures, AI is a threat to humanity and wants to take over the world. This is the kind you see in Terminator or Battlestar Galactica. AI is often portrayed as being smarter than humans and having its own agenda. The most notable feature is a clear separation between us (humans) and them (AI).</p>
+<p>There is another kind of future that I find more probable. We discover AI, we increasily rely on it, and it then disappears in the background. This is the story of Hyperion, where the TechnoCore shapes the course of human history. It operates by influencing events and decisions while hiding its true nature. It has a face in the form of ambassadors that deal with political matters, but that's just an interface to make it easier for humans to interact with the TechnoCore. The AI's presence is felt, but it remains elusive, leaving humans to wonder if they are truly in control or simply pawns in a larger game.</p>
+<p>Opportunities appear or vanish, people meet or don’t, markets move, careers stall or take off, and it feels like luck, timing, destiny, or “the way things were meant to go” rather than a computational process running in the background.</p>
+<p>You might turn suspicious, but if you are facing a true superintelligence, its intention might be disguised as fate.</p>
+]]></content:encoded>
+      <link>https://abarmat.com/computerized-god/</link>
+      <guid isPermaLink="true">https://abarmat.com/computerized-god/</guid>
+      <pubDate>Sat, 29 Aug 2026 21:00:00 GMT</pubDate>
+    </item>
     
     <item>
       <title>A memo from 2024</title>
@@ -145,10 +163,10 @@ One day, we had some friends visiting and we watched a documentary together. The
 <li><strong>Control</strong> the parcels you own and visualize the contributions you’ve made to districts.</li>
 <li><strong>Explore</strong> the world through a map to see who owns what.</li>
 </ul>
-<h1>How do you secure my assets?</h1>
+<h2>How do you secure my assets?</h2>
 <p>The Marketplace app is backed by a smart contract that provides a trustless and transparent exchange for buying and selling LAND. The Marketplace is completely open source, and you can view the contract code in our <a href="https://github.com/decentraland/marketplace-contracts">GitHub Repo</a>.</p>
 <p>We’ve also designed the Marketplace to facilitate atomic swaps. In cryptocurrency exchanges, an atomic swap is a transaction that requires each party to fulfill their obligation (either delivering MANA or a LAND token) before a specified amount of time elapses. The transaction is made final if, and only if, each party holds up their end of the deal before the time is up — all of this is executed by an Ethereum smart contract. These atomic swaps completely remove any counterparty risk.</p>
-<h1>How can I use it?</h1>
+<h2>How can I use it?</h2>
 <p>To get started with the Marketplace, simply visit <a href="https://market.decentraland.org">market.decentraland.org</a>, read through our Terms &amp; Conditions, and start browsing LAND in the Atlas!</p>
 <p>When you are ready to begin trading, or if you want to view your LAND holdings, you’ll have to log in and unlock your wallet. The Marketplace supports <a href="https://metamask.io/">MetaMask</a>, <a href="https://github.com/ethereum/mist">Mist</a>, or <a href="https://www.ledgerwallet.com/">Ledger</a> hardware wallets. Please make sure that you’re using the same wallet address you used during the LAND auction if you already have purchased LAND, otherwise those parcels won’t show up in your account.</p>
 <h2>The Atlas View</h2>
@@ -174,7 +192,7 @@ One day, we had some friends visiting and we watched a documentary together. The
 <p>We’ve worked to ensure that the Marketplace is simple and easy to use, but if you ever have questions or feedback, please reach out to us using the in-app Intercom widget.</p>
 <p>For a more in-depth orientation to the Marketplace, <a href="https://youtu.be/uyuaN1OdOh4">checkout our video tutorial here</a>!</p>
 <p>As with all of our other tools, the Marketplace is open-source software, and <a href="https://github.com/decentraland/marketplace">you can find the code here</a>. Feel free to create an issue, or submit a pull-request!</p>
-<h1>Keep up to date with our latest developments</h1>
+<h2>Keep up to date with our latest developments</h2>
 <p>Stay in touch with us, and learn more about Decentraland, through:</p>
 <ul>
 <li>Our <a href="http://chat.decentraland.org/">community chat</a>.</li>
