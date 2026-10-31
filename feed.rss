@@ -7,8 +7,29 @@
     <atom:link href="https://abarmat.com/feed.rss" rel="self" type="application/rss+xml"/>
     <language>en</language>
     
-    <lastBuildDate>Sat, 29 Aug 2026 21:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 21:00:00 GMT</lastBuildDate>
     
+    
+    <item>
+      <title>Masks on!</title>
+      <description>Masks on!</description>
+      <content:encoded><![CDATA[<p>Nearly ten years ago I shared with some friends that we might all be wearing masks in the future. That prediction came true when the pandemic hit, but it was not the kind of mask I was thinking about!</p>
+<p>At that time I was playing with deep learning. I watched how quickly neural networks were breaking all records in image recognition, some early forms of style transfer and followed AlphaGo's progress. It felt we discovered something really powerful, and wondered what if that trend continued.</p>
+<p><img src="/assets/images/nn.png" alt="Intelligence"></p>
+<hr>
+<p>Sensors are already everywhere, and they will increasingly be powered by AI. Today, the most prominent one is the camera. It’s not easy to use a laptop at airports, hotels, bars or cafés without being recorded. A camera can expose enough detail to show what you type. Now, we can analyze and cross-reference the data at scale.</p>
+<p>We have mobile devices in our pockets, most of them, in theory, are not actively recording unless you have been hacked or you installed a malicious app.</p>
+<p>An avalanche of new devices that supersede the mobile will soon become more common. Wearable cameras that read your face and gestures. They'll pick up cues about your mood, catch if you are lying or nervous much better than any human. Your AirPods-like devices will simultaneously translate conversations, record them all, isolate them, transcribe, and then amplify whatever you want to listen to.</p>
+<p>We'll increasingly rely on physical masks. It's not the future I'd love to live in, but the adoption of masks might look like the adoption of computers, if you don’t use one you will be at a disadvantage.</p>
+<p>A mask can get you a lot. It can hide your emotions but at the same time analyze the world around you as it integrates all the vision and audio information paired with a neural network. You could have superpowers: vision beyond the visible spectrum, or choosing what to hear. The mask allows new forms of privacy, like talking to anyone using an encrypted channel.</p>
+<p>There will be open-source masks, with parts built as modules that people can attach to expand its capabilities. We'll also see the very fancy ones, &quot;hand-crafted&quot; specially for you that will signal status.</p>
+<hr>
+<p>Maybe showing your face will become an act of trust. We will take our masks off around friends, at home, with people we believe will just use human judgment. Our ordinary world could become a form of intimacy.</p>
+]]></content:encoded>
+      <link>https://abarmat.com/masks-on/</link>
+      <guid isPermaLink="true">https://abarmat.com/masks-on/</guid>
+      <pubDate>Fri, 30 Oct 2026 21:00:00 GMT</pubDate>
+    </item>
     
     <item>
       <title>Computerized god</title>
